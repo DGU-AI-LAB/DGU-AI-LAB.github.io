@@ -66,6 +66,9 @@ utils.py (accuracy, mse)
 - [GitHub](https://github.com/DGU-AI-LAB/metaX_dev)
 
 ## Installation
+```bash
+pip install metax
+```
 
 ## Snippets & Examples
 
