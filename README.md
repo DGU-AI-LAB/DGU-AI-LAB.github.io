@@ -7,7 +7,7 @@
 <h3 align="center">
 <p>Meta-Learning & Mutlimodal Learning Library for TensorFlow 2.0
 </h3>
-
+<p>
 metaX library is a python library with deep neural networks and datasets for meta learning and multi-view learning base on Tensorflow 2.0.
 
 We provide...
@@ -73,4 +73,4 @@ utils.py (accuracy, mse)
 ## Acknowledgements
 - Next Generation Computing...
 
-
+<p>
