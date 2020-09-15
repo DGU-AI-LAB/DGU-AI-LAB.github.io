@@ -2,38 +2,23 @@
 sort: 3
 ---
 
-# Admonition Card
+# Examples
+## Meta-Learning
 
-```note
-## This is a note
+### MAML
 
-Markdown is supported, Text can be **bold**, _italic_, or ~~strikethrough~~. [Links](https://github.com) should be blue with no underlines
+**Results**
 
-`inline code`
+**Usage**
 
-[`inline code inside link`](#)
-```
+### Prototypical Networks
 
-```note
-This is note2
-```
+**Results**
 
-```note
-This is note3
-```
+**Usage**
 
-```tip
-It’s bigger than a bread box.
-```
+## Multimodal Learning
 
-```tip
-It’s tip 2
-```
+### Vis LSTM
 
-```warning
-Strong prose may provoke extreme mental exertion. Reader discretion is strongly advised.
-```
-
-```danger
-Mad scientist at work!
-```
+### Modified mCNN
