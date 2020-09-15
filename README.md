@@ -1,14 +1,10 @@
 # metaX_Library
+
+
 <p align="center">
     <br>
     <img src="https://raw.githubusercontent.com/DGU-AI-LAB/DGU-AI-LAB.github.io/master/images/logo_transparent.png" width="400"/>
     <br>
-<p>
-	
-<p>	
-<h3 align="center">
-<p>Meta-Learning & Mutlimodal Learning Library for TensorFlow 2.0
-</h3>
 <p>
 metaX library is a python library with deep neural networks and datasets for meta learning and multi-view learning base on Tensorflow 2.0.
 
