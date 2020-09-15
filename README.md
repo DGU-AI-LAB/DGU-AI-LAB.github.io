@@ -1,6 +1,5 @@
 # metaX_Library
-<img src="https://raw.githubusercontent.com/DGU-AI-LAB/DGU-AI-LAB.github.io/master/images/logo_transparent.png" width="65%">
-
+<img src="https://raw.githubusercontent.com/DGU-AI-LAB/DGU-AI-LAB.github.io/master/images/logo_transparent.png" width="65%">  
 
 metaX library is a python library with deep neural networks and datasets for meta learning and multi-view learning base on Tensorflow 2.0.
 
@@ -45,17 +44,18 @@ model/
 	heterogeneous_data_analysis/
 		image_text_embeding.py              (In progress)
 		Vis_LSTM.py                         (In progress)
-    Modified_mCNN.py                    (In progress)
+                Modified_mCNN.py                    (In progress)
+		
 train.py
 utils.py (accuracy, mse)
 ```
 
 ## Resources
-- Website :
-- Documentation :
-- Tutorials :
-- Examples :
-- GitHub :
+- Website : [https://dgu-ai-lab.github.io/](https://dgu-ai-lab.github.io/)
+- Documentation : [https://dgu-ai-lab.github.io/](https://dgu-ai-lab.github.io/)
+- Tutorials : [https://dgu-ai-lab.github.io/](https://dgu-ai-lab.github.io/)
+- Examples : [https://dgu-ai-lab.github.io/](https://dgu-ai-lab.github.io/)
+- GitHub : [https://github.com/DGU-AI-LAB/metaX_dev](https://github.com/DGU-AI-LAB/metaX_dev)
 
 ## Installation
 
