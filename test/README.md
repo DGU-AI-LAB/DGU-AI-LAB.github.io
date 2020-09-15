@@ -2,7 +2,7 @@
 sort: 2
 ---
 
-# Test Documentation
+# metaX Documentation
 
 ```
 {% raw %}{% include list.liquid all=true %}{% endraw %}
