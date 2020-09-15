@@ -1,43 +1,69 @@
-# jekyll-rtd-theme
-[![](https://github.com/rundocs/jekyll-rtd-theme/workflows/CI/badge.svg)][repository]
-[![](https://img.shields.io/gem/v/jekyll-rtd-theme)][rubygem]
-[![](https://img.shields.io/gem/dt/jekyll-rtd-theme)][rubygem]
-[![](https://data.jsdelivr.com/v1/package/gh/rundocs/jekyll-rtd-theme/badge)][cdn]
-[![](https://www.codefactor.io/repository/github/rundocs/jekyll-rtd-theme/badge)][codefactor]
-[![](https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg)](https://jekyll-themes.com)
-[![](https://badges.gitter.im/rundocs/jekyll-rtd-theme.svg)][gitter]
+# metaX_Library
+<img src="https://github.com/DGU-AI-LAB/metaX_dev/blob/master/logo_transparent.png" width="300">
 
-GitHub-flavored docs theme for Jekyll, based on sphinx_rtd_theme
 
-<img class="shadow-box" width="50%" alt="jekyll-rtd-theme" src="https://user-images.githubusercontent.com/68011645/89026666-ad3a8680-d35b-11ea-9f4b-d3fe26ae12ed.png">
+metaX library is a python library with deep neural networks and datasets for meta learning and multi-view learning base on Tensorflow 2.0.
 
-## Quick start
-```yml
-remote_theme: rundocs/jekyll-rtd-theme
-```
-You can [generate](https://github.com/rundocs/starter-slim/generate) with the same files and folders from [rundocs/starter-slim](https://github.com/rundocs/starter-slim/)
+We provide...
+- Deep neural networks for meta learning that can solve one-shot or few-shot problems.
+- Deep neural networks for multi-view learning
+- Various types of experimental datasets that can be used for experiments using the provided model 
+- Load codes for provided dataset with few-shot learning settings
 
-## Features
-- Automatically generate nested sidebar based on directory
-- Multi-language supported
-- Search engine optimized
-- Document search (RegExp supported)
-- Support third-party comments
-- Google, Baidu, CNZZ Analytics supported
-- Just need one file `_config.yml` to configure site
+## Overview
+- metaX.dataset
+- metaX.model
 
-## Documents
-For full documentation, please refer to our website ([rundocs.io](https://rundocs.io/)) for details
+## Directory
+<pre>
+<code>
+dataset/
+	data_generator.py (Omniglot, mini-ImageNet) (Completed)
+        KTS_data_generator.py                       (Completed)
+	FLOWER_data_generator.py                    (In progress)
+	KMSCOCO_data_generator.py                   (In progress)
+	KVQA_data_generator.py                      (In progress)
+	CropDisease.py                              (Completed)
+	EuroSAT.py                                  (Completed)
+	ISIC.py                                     (Completed)
+ 	ChestX.py                                   (Completed)
+  data/
+  raw_data/
+  
+model/
+	LearningType.py 
+	metric_based/
+		Relation_network.py                 (In progress)
+		Prototypical_network.py             (In progress)
+		Siamese_network.py                  (Completed)
+	model_based/
+		MANN.py                             (Completed)
+		SNAIL.py
+	optimization_based/
+		MAML.py                             (Completed)
+		MetaSGD.py
+		Reptile.py                          (In progress)
+	heterogeneous_data_analysis/
+		image_text_embeding.py              (In progress)
+		Vis_LSTM.py                         (In progress)
+    Modified_mCNN.py                    (In progress)
+train.py
+utils.py (accuracy, mse)
 
-### test
-- Latest test document: [rundocs.github.io/jekyll-rtd-theme](https://rundocs.github.io/jekyll-rtd-theme)
-- Preview debug branch, please refer to [rundocs.github.io/debug](https://rundocs.github.io/debug)
+## Resources
+- Website :
+- Documentation :
+- Tutorials :
+- Examples :
+- GitHub :
 
-## The license
-The theme is available as open source under the terms of the MIT License
+## Installation
 
-[repository]: https://github.com/rundocs/jekyll-rtd-theme
-[rubygem]: https://rubygems.org/gems/jekyll-rtd-theme
-[cdn]: https://cdn.jsdelivr.net/gh/rundocs/jekyll-rtd-theme/
-[codefactor]: https://www.codefactor.io/repository/github/rundocs/jekyll-rtd-theme
-[gitter]: https://gitter.im/rundocs/jekyll-rtd-theme?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+## Snippets & Examples
+
+## Lisences
+
+## Acknowledgements
+- Next Generation Computing...
+
+
