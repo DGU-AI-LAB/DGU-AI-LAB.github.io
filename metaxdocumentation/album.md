@@ -10,7 +10,7 @@ sort: 2
 #### Omniglot
 <p align="center">
     <br>
-    <img src="https://raw.githubusercontent.com/DGU-AI-LAB/DGU-AI-LAB.github.io/master/images/omniglot.jpg" width="200">
+    <img src="https://raw.githubusercontent.com/DGU-AI-LAB/DGU-AI-LAB.github.io/master/images/omniglot.jpg" width="70%", height="70%">
     <br>
 </p>
 <p align="center"><strong>Example of omniglot dataset</strong></p>
