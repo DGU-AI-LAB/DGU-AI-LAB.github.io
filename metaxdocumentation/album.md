@@ -15,16 +15,16 @@ sort: 2
 </p>
 <p align="center"><strong>Example of omniglot dataset</strong></p>
 
-##### Description
+**Description**
 Omniglot dataset is generally used for one-shot learning. It contains 1623 different handwritten characters from 50 different alphabets written by 20 different people. That means, it has 1623 classes with 20 examples each. Each image is of size 105x105. 
 
-##### Arguments
+**Arguments**
 * **raw_data_address** (str) - Omniglot raw data path.
 * **random_seed** (int, default=-1) - Random seed value.
 * **num_train_classes** (int) - Number of train classes.
 * **num_val_classes** (int) - Number of validation classes.
 
-##### Example
+**Example**
 ```python
 from metaX.datasets import OmniglotDatabase
 
@@ -44,15 +44,15 @@ database = OmniglotDatabase(
 </p>
 <p align="center"><strong>Example of MiniImageNet dataset</strong></p>
 
-##### Description
+**Description**
 MiniImageNet dataset is generally used for few-shot learning. This dataset contains 100 different classes in total that are divided into training, validation and test class splits. 
 
-##### Arguments
+**Arguments**
 * **raw_data_address** (str) - MiniImageNet raw data path.
 * **random_seed** (int, default=-1) - Random seed value.
 
 
-##### Example
+**Example**
 ```python
 from metaX.datasets import MiniImagenetDatabase
 
@@ -70,14 +70,14 @@ database=MiniImagenetDatabase(
 </p>
 <p align="center"><strong>Example of CropDisease dataset</strong></p>
 
-##### Description
+**Description**
 CropDisease dataset is one of the CD-FSL(Cross-Dimain Few-Shot Learning). This dataset contains 38 different classes in total that have diseased and healthy palnt leaves.
 
-##### Arguments
+**Arguments**
 * **raw_data_address** (str) - CropDisease raw data path.
 * **random_seed** (int, default=-1) - Random seed value.
 
-##### Example
+**Example**
 ```python
 from metaX.datasets import CropDiseaseDatabase
 
@@ -94,14 +94,14 @@ database=CropDiseaseDatabase(
 </p>
 <p align="center"><strong>Example of EuroSAT dataset</strong></p>
 
-##### Description
+**Description**
 EuroSAT dataset is based on Sentinel-2 satellite imagery covering 13 spectral bands and consists of 10 classes containing 27000 labeled and georeferenced samples.
 
-##### Arguments
+**Arguments**
 * **raw_data_address** (str) - EuroSAT raw data path.
 * **random_seed** (int, default=-1) - Random seed value.
 
-##### Example
+**Example**
 ```python
 from metaX.datasets import EuroSATDatabase
 
@@ -118,14 +118,14 @@ database=EuroSATDatabase(
 </p>
 <p align="center"><strong>Example of ISIC dataset</strong></p>
 
-##### Description
+**Description**
 ISIC dataset is from the ISIC Machine Learning Callenges. There are 8010 samples in the training dataset for seven disease categories which are Melanoma (M), Melanocytic nevus (N), Basal cell carcinoma (BCC), Actinic keratosis / Bowen's disease-intraepithelial carcinoma (AK), Benign keratosis- solar lentigo / seborrheic keratosis / lichen planus-like keratosis (PBK), Dermatofibroma (D) and Vascular lesion (VL).
 
-##### Arguments
+**Arguments**
 * **raw_data_address** (str) - ISIC raw data path.
 * **random_seed** (int, default=-1) - Random seed value.
 
-##### Example
+**Example**
 ```python
 from metaX.datasets import ISICDatabase
 
@@ -142,14 +142,14 @@ database=ISICDatabase(
 </p>
 <p align="center"><strong>Example of ChestX dataset</strong></p>
 
-##### Description
+**Description**
 Chest X dataset contains 108,948 frontalview X-ray images of 32,717 unique patients with the textmined eight disease image labels (where each image can have multi-labels), from the associated radiological reports.
 
-##### Arguments
+**Arguments**
 * **raw_data_address** (str) - ChestX raw data path.
 * **random_seed** (int, default=-1) - Random seed value.
 
-##### Example
+**Example**
 ```python
 from metaX.datasets import ChestXDatabase
 
@@ -171,14 +171,14 @@ database=ChestXDatabase(
 </p>
 <p align="center"><strong>Example of KTS dataset</strong></p>
 
-##### Description
+**Description**
 The KTS Dataset is consists of data on 10 labels related to tourist spots in Korea collected from the Instagram.
 
-##### Arguments
+**Arguments**
 * **raw_data_address** (str) - KTS raw data path.
 * **random_seed** (int, default=-1) - Random seed value.
 
-##### Example
+**Example**
 ```python
 from metaX.datasets import KTSDatabase
 
@@ -198,14 +198,14 @@ database=KTSDatabase(
 </p>
 <p align="center"><strong>Example of Oxford Flowers 102 dataset</strong></p>
 
-##### Description
+**Description**
 Oxford Flowers 102 dataset is a consistent of 102 flower categories commonly occurring in the United Kingdom. Each class consists of between 40 and 258 images. The images have large scale, pose and light variations. In addition, there are categories that have large variations within the category and several very similar categories.
 
-##### Arguments
+**Arguments**
 * **raw_data_address** (str) - Oxford flowers 102 raw data path.
 * **random_seed** (int, default=-1) - Random seed value.
 
-##### Example
+**Example**
 ```python
 from metaX.datasets import FlowersDatabase
 
@@ -230,7 +230,7 @@ database=FlowersDatabase(
 
 #### 1. Siamese Network
 
-##### Description
+**Description**
 High-level implementation of Siamese Network.
 
 This class contains it with meta_train(), meta_train(), load_model() and predict_with_support() methods.
@@ -247,9 +247,9 @@ from metaX.model.metric_based.Siamese_Network import OmniglotModel
 network_cls=OmniglotModel
 siamese_network = Siamese_Network(args, database, network_cls)
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **args** (str) - 어쩌구저쩌구
 * **database** (int, default=-1) - 어쩌구저쩌구
 * **network_cls** (int, default=-1) - 어쩌구저쩌구
@@ -257,18 +257,18 @@ siamese_network = Siamese_Network(args, database, network_cls)
 ```python
 siamese_network.meta_train(epochs = args.epochs)
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **epochs** (str) - 어쩌구저쩌구
 
 
 ```python
 siamese_network.meta_test(iterations = args.iterations)
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **iterations** (str) - 어쩌구저쩌구
 
 
@@ -276,9 +276,9 @@ siamese_network.meta_test(iterations = args.iterations)
 ```python
 siamese_network.load_model(epochs = args.epochs)
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **epochs** (str) - 어쩌구저쩌구
 
 
@@ -286,15 +286,15 @@ siamese_network.load_model(epochs = args.epochs)
 ```python
 print(siamese_network.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **meta_test_path** (str) - 어쩌구저쩌구
 
 #### 2. Prototypical Network
 
 
-##### Description
+**Description**
 High-level implementation of Prototypical Network.
 
 This class contains it with meta_train(), meta_train(), load_model() and predict_with_support() methods.
@@ -311,9 +311,9 @@ from metaX.model.metric_based.Prototypical_Network import OmniglotModel
 network_cls=OmniglotModel
 prototypical_network = Prototypical_Network(args, database, network_cls)
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **args** (str) - 어쩌구저쩌구
 * **database** (int, default=-1) - 어쩌구저쩌구
 * **network_cls** (int, default=-1) - 어쩌구저쩌구
@@ -321,46 +321,46 @@ prototypical_network = Prototypical_Network(args, database, network_cls)
 ```python
 prototypical_network.meta_train(epochs = args.epochs)
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **epochs** (str) - 어쩌구저쩌구
 
 
 ```python
 prototypical_network.meta_test(iterations = args.iterations)
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **iterations** (str) - 어쩌구저쩌구
 
 ```python
 prototypical_network.load_model(epochs = args.epochs)
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **epochs** (str) - 어쩌구저쩌구
 
 ```python
 print(prototypical_network.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **meta_test_path** (str) - 어쩌구저쩌구
 
 ### 2. Model-based
 
 #### 1. MANN
 
-##### Description
+**Description**
 High-level implementation of Memory-Augmented Neural Networks.
 
 This class contains it with meta_train(), meta_train(), load_model() and predict_with_support() methods.
 
-##### Arguments
+**Arguments**
 
 ##### References
 1. Santoro et al.2016. "Meta-learning with memory-augmented neural networks."
@@ -374,9 +374,9 @@ from metaX.model.model_based.MANN import OmniglotModel
 network_cls=OmniglotModel
 mann = MANN(args, database, network_cls)
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **args** (str) - 어쩌구저쩌구
 * **database** (int, default=-1) - 어쩌구저쩌구
 * **network_cls** (int, default=-1) - 어쩌구저쩌구
@@ -385,36 +385,36 @@ mann = MANN(args, database, network_cls)
 ```python
 mann.meta_train(epochs = args.epochs)
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **epochs** (str) - 어쩌구저쩌구
 
 
 ```python
 mann.meta_test(iterations = args.iterations)
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **iterations** (str) - 어쩌구저쩌구
 
 
 ```python
 mann.load_model(epochs = args.epochs)
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **epochs** (str) - 어쩌구저쩌구
 
 
 ```python
 print(mann.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **meta_test_path** (str) - 어쩌구저쩌구
 
 
@@ -423,12 +423,12 @@ print(mann.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 
 #### 1. MAML
 
-##### Description
+**Description**
 High-level implementation of Model-Agnostic Meta-Learning.
 
 This class contains it with meta_train(), meta_train(), load_model() and predict_with_support() methods.
 
-##### Arguments
+**Arguments**
 
 ##### References
 1. Finn et al.2017. "Model-agnostic meta-learning for fast adaptation of deep networks."
@@ -441,9 +441,9 @@ from metaX.model.optimization_based.MAML import OmniglotModel
 network_cls=OmniglotModel
 maml = ModelAgnosticMetaLearning(args, database, network_cls)
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **args** (str) - 어쩌구저쩌구
 * **database** (int, default=-1) - 어쩌구저쩌구
 * **network_cls** (int, default=-1) - 어쩌구저쩌구
@@ -452,47 +452,47 @@ maml = ModelAgnosticMetaLearning(args, database, network_cls)
 ```python
 maml.meta_train(epochs = args.epochs)
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **epochs** (str) - 어쩌구저쩌구
 
 
 ```python
 maml.meta_test(iterations = args.iterations)
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **iterations** (str) - 어쩌구저쩌구
 
 
 ```python
 maml.load_model(epochs = args.epochs)
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **epochs** (str) - 어쩌구저쩌구
 
 
 ```python
 print(maml.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **meta_test_path** (str) - 어쩌구저쩌구
 
 
 #### 2. Reptile
 
-##### Description
+**Description**
 High-level implementation of Reptile.
 
 This class contains it with meta_train(), meta_train(), load_model() and predict_with_support() methods.
 
-##### Arguments
+**Arguments**
 
 ##### References
 1. Nichol et al.2018. "On first-order meta-learning algorithms."
@@ -505,9 +505,9 @@ from metaX.model.optimization_based.Reptile import OmniglotModel
 network_cls=OmniglotModel
 reptile = Reptile(args, database, network_cls)
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **args** (str) - 어쩌구저쩌구
 * **database** (str) - 어쩌구저쩌구
 * **network_cls** (str) - 어쩌구저쩌구
@@ -515,36 +515,36 @@ reptile = Reptile(args, database, network_cls)
 ```python
 reptile.meta_train(epochs = args.epochs)
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **epochs** (str) - 어쩌구저쩌구
 
 
 ```python
 reptile.meta_test(iterations = args.iterations)
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **iterations** (str) - 어쩌구저쩌구
 
 
 ```python
 reptile.load_model(epochs = args.epochs)
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **epochs** (str) - 어쩌구저쩌구
 
 
 ```python
 print(reptile.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **meta_test_path** (str) - 어쩌구저쩌구
 
 
@@ -553,7 +553,7 @@ print(reptile.predict_with_support(meta_test_path='/dataset/data/omniglot/test')
 #### 1. Heterogeneous Emedding
 
 
-##### Description
+**Description**
 This class contains it with train(), train(), load_model() and predict() methods.
 
 ##### References
@@ -567,9 +567,9 @@ from metaX.model.heterogeneous.Heterogeneous_Emedding import Heterogeneous_Emedd
 network_cls=Heterogeneous_Emedding_Model
 heterogeneous_emedding = Heterogeneous_Emedding(args, database, network_cls)
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **args** (str) - 어쩌구저쩌구
 * **database** (str) - 어쩌구저쩌구
 * **network_cls** (str) - 어쩌구저쩌구
@@ -578,36 +578,36 @@ heterogeneous_emedding = Heterogeneous_Emedding(args, database, network_cls)
 ```python
 heterogeneous_emedding.train(epochs = args.epochs)
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **epochs** (str) - 어쩌구저쩌구
 
 
 ```python
 heterogeneous_emedding.test(iterations = args.iterations)
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **iterations** (str) - 어쩌구저쩌구
 
 
 ```python
 heterogeneous_emedding.load_model(epochs = args.epochs)
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **epochs** (str) - 어쩌구저쩌구
 
 
 ```python
 print(heterogeneous_emedding.predict(predict_path='/dataset/data/kts/test'))
 ```
-##### Description
+**Description**
 어쩌구저쩌구
-##### Arguments
+**Arguments**
 * **predict_path** (str) - 어쩌구저쩌구
 
 #### Vis LSTM
