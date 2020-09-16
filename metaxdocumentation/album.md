@@ -57,8 +57,8 @@ MiniImageNet dataset is generally used for few-shot learning. This dataset conta
 from metaX.datasets import MiniImagenetDatabase
 
 database=MiniImagenetDatabase(
-		    raw_data_address="\dataset\raw_data\mini_imagenet",
-            random_seed=-1)
+			raw_data_address="\dataset\raw_data\mini_imagenet",
+			random_seed=-1)
 
 ```
 
@@ -82,8 +82,8 @@ CropDisease dataset is one of the CD-FSL(Cross-Dimain Few-Shot Learning). This d
 from metaX.datasets import CropDiseaseDatabase
 
 database=CropDiseaseDatabase(
-		    raw_data_address="\dataset\raw_data\cropdisease",
-            random_seed=-1)
+			raw_data_address="\dataset\raw_data\cropdisease",
+			random_seed=-1)
 
 ```
 #### EuroSAT
@@ -106,8 +106,8 @@ EuroSAT dataset is based on Sentinel-2 satellite imagery covering 13 spectral ba
 from metaX.datasets import EuroSATDatabase
 
 database=EuroSATDatabase(
-		    raw_data_address="\dataset\raw_data\eurosat",
-            random_seed=-1)
+			raw_data_address="\dataset\raw_data\eurosat",
+			random_seed=-1)
 
 ```
 #### ISIC
@@ -130,8 +130,8 @@ ISIC dataset is from the ISIC Machine Learning Callenges. There are 8010 samples
 from metaX.datasets import ISICDatabase
 
 database=ISICDatabase(
-		    raw_data_address="\dataset\raw_data\isic",
-            random_seed=-1)
+			raw_data_address="\dataset\raw_data\isic",
+			random_seed=-1)
 
 ```
 #### ChestX
@@ -154,8 +154,8 @@ Chest X dataset contains 108,948 frontalview X-ray images of 32,717 unique patie
 from metaX.datasets import ChestXDatabase
 
 database=ChestXDatabase(
-		    raw_data_address="\dataset\raw_data\chestx",
-            random_seed=-1)
+			raw_data_address="\dataset\raw_data\chestx",
+			random_seed=-1)
 
 ```
 ### Multimodal Learning
@@ -180,8 +180,8 @@ The KTS Dataset is consists of data on 10 labels related to tourist spots in Kor
 from metaX.datasets import KTSDatabase
 
 database=KTSDatabase(
-		    raw_data_address="\dataset\raw_data\kts",
-            random_seed=-1)
+			raw_data_address="\dataset\raw_data\kts",
+			random_seed=-1)
 
 ```
 
@@ -207,8 +207,8 @@ Oxford Flowers 102 dataset is a consistent of 102 flower categories commonly occ
 from metaX.datasets import FlowersDatabase
 
 database=FlowersDatabase(
-		    raw_data_address="\dataset\raw_data\flowers",
-            random_seed=-1)
+			raw_data_address="\dataset\raw_data\flowers",
+			random_seed=-1)
 
 ```
 #### K-MSCOCO
