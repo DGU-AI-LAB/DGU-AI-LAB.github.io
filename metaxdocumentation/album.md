@@ -17,10 +17,12 @@ sort: 2
 
 Omniglot dataset is generally used for one-shot learning. It contains 1623 different handwritten characters from 50 different alphabets written by 20 different people. That means, it has 1623 classes with 20 examples each. Each image is of size 105x105. 
 
+
+
 #### MiniImageNet
 <p align="center">
     <br>
-    <img src="https://raw.githubusercontent.com/DGU-AI-LAB/DGU-AI-LAB.github.io/master/images/miniImagenet.PNG" width="200">
+    <img src="https://raw.githubusercontent.com/DGU-AI-LAB/DGU-AI-LAB.github.io/master/images/miniImagenet.PNG" width="70%" height="70%">
     <br>
 </p>
 <p align="center"><strong>Example of MiniImageNet dataset</strong></p>
@@ -30,7 +32,7 @@ MiniImageNet dataset is generally used for few-shot learning. This dataset conta
 #### CropDisease
 <p align="center">
     <br>
-    <img src="https://raw.githubusercontent.com/DGU-AI-LAB/DGU-AI-LAB.github.io/master/images/CropDisease.jpg" width="200">
+    <img src="https://raw.githubusercontent.com/DGU-AI-LAB/DGU-AI-LAB.github.io/master/images/CropDisease.jpg" width="70%" height="70%">
     <br>
 </p>
 <p align="center"><strong>Example of CropDisease dataset</strong></p>
@@ -40,7 +42,7 @@ CropDisease dataset is one of the CD-FSL(Cross-Dimain Few-Shot Learning). This d
 #### EuroSAT
 <p align="center">
     <br>
-    <img src="https://raw.githubusercontent.com/DGU-AI-LAB/DGU-AI-LAB.github.io/master/images/EuroSAT.png" width="200">
+    <img src="https://raw.githubusercontent.com/DGU-AI-LAB/DGU-AI-LAB.github.io/master/images/EuroSAT.png" width="70%" height="70%">
     <br>
 </p>
 <p align="center"><strong>Example of EuroSAT dataset</strong></p>
@@ -50,7 +52,7 @@ EuroSAT dataset is based on Sentinel-2 satellite imagery covering 13 spectral ba
 #### ISIC
 <p align="center">
     <br>
-    <img src="https://raw.githubusercontent.com/DGU-AI-LAB/DGU-AI-LAB.github.io/master/images/ISIC.png" width="200">
+    <img src="https://raw.githubusercontent.com/DGU-AI-LAB/DGU-AI-LAB.github.io/master/images/ISIC.png" width="70%" height="70%">
     <br>
 </p>
 <p align="center"><strong>Example of ISIC dataset</strong></p>
@@ -60,7 +62,7 @@ ISIC dataset is from the ISIC Machine Learning Callenges. There are 8010 samples
 #### ChestX
 <p align="center">
     <br>
-    <img src="https://raw.githubusercontent.com/DGU-AI-LAB/DGU-AI-LAB.github.io/master/images/ChestX.png" width="200">
+    <img src="https://raw.githubusercontent.com/DGU-AI-LAB/DGU-AI-LAB.github.io/master/images/ChestX.png" width="70%" height="70%">
     <br>
 </p>
 <p align="center"><strong>Example of ChestX dataset</strong></p>
@@ -71,7 +73,7 @@ Chest X dataset contains 108,948 frontalview X-ray images of 32,717 unique patie
 #### Korean Tourist Spot(KTS)
 <p align="center">
     <br>
-    <img src="https://raw.githubusercontent.com/DGU-AI-LAB/DGU-AI-LAB.github.io/master/images/KTS.png" width="200">
+    <img src="https://raw.githubusercontent.com/DGU-AI-LAB/DGU-AI-LAB.github.io/master/images/KTS.png" width="70%" height="70%">
     <br>
 </p>
 <p align="center"><strong>Example of KTS dataset</strong></p>
