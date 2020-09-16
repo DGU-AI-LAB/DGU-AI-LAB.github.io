@@ -148,6 +148,14 @@ database=KTSDatabase(
 #### Oxford Flowers 102
 Oxford Flowers 102 dataset is a consistent of 102 flower categories commonly occurring in the United Kingdom. Each class consists of between 40 and 258 images. The images have large scale, pose and light variations. In addition, there are categories that have large variations within the category and several very similar categories.
 
+
+<p align="center">
+    <br>
+    <img src="https://raw.githubusercontent.com/DGU-AI-LAB/DGU-AI-LAB.github.io/master/images/Oxford_flowers_102.png" width="70%" height="70%">
+    <br>
+</p>
+<p align="center"><strong>Example of Oxford Flowers 102 dataset</strong></p>
+
 ```python
 from dataset.data_generator import FlowersDatabase
 
