@@ -187,6 +187,17 @@ database=FlowersDatabase(
 
 #### Siamese Network
 
+##### Description
+High-level implementation of Siamese Network.
+
+This class contains it with meta_train(), meta_train(), load_model() and predict_with_support() methods.
+
+##### Arguments
+
+##### References
+1. Koch et al.2015. "Siamese neural networks for one-shot image recognition."
+
+
 ##### Example
 ```python
 from metaX.model.metric_based.Siamese_Network import Siamese_Network
@@ -199,6 +210,17 @@ if __ name__ == '__main__':
     print(siamese_network.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ```
 #### Prototypical Network
+
+
+##### Description
+High-level implementation of Prototypical Network.
+
+This class contains it with meta_train(), meta_train(), load_model() and predict_with_support() methods.
+
+##### Arguments
+
+##### References
+1. Snell et al.2017. "Prototypical networks for few-shot learning."
 
 ##### Example
 ```python
@@ -216,6 +238,18 @@ if __ name__ == '__main__':
 
 #### MANN
 
+
+##### Description
+High-level implementation of Memory-Augmented Neural Networks.
+
+This class contains it with meta_train(), meta_train(), load_model() and predict_with_support() methods.
+
+##### Arguments
+
+##### References
+1. Santoro et al.2016. "Meta-learning with memory-augmented neural networks."
+
+
 ##### Example
 ```python
 from metaX.model.model_based.MANN import MANN
@@ -232,6 +266,16 @@ if __ name__ == '__main__':
 
 #### MAML
 
+##### Description
+High-level implementation of Model-Agnostic Meta-Learning.
+
+This class contains it with meta_train(), meta_train(), load_model() and predict_with_support() methods.
+
+##### Arguments
+
+##### References
+1. Finn et al.2017. "Model-agnostic meta-learning for fast adaptation of deep networks."
+
 ##### Example
 ```python
 from metaX.model.optimization_based.MANN import MAML
@@ -244,6 +288,16 @@ if __ name__ == '__main__':
     print(maml.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ```
 #### Reptile
+
+##### Description
+High-level implementation of Reptile.
+
+This class contains it with meta_train(), meta_train(), load_model() and predict_with_support() methods.
+
+##### Arguments
+
+##### References
+1. Nichol et al.2018. "On first-order meta-learning algorithms."
 
 ##### Example
 ```python
@@ -259,6 +313,15 @@ if __ name__ == '__main__':
 ### Heterogeneous_data_analysis
 
 #### Heterogeneous Emedding
+
+
+##### Description
+This class contains it with train(), train(), load_model() and predict() methods.
+
+##### Arguments
+
+##### References
+
 
 ##### Example
 ```python
