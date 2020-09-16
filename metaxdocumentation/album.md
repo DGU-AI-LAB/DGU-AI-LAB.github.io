@@ -15,9 +15,10 @@ sort: 2
 </p>
 <p align="center"><strong>Example of omniglot dataset</strong></p>
 
+##### Description
 Omniglot dataset is generally used for one-shot learning. It contains 1623 different handwritten characters from 50 different alphabets written by 20 different people. That means, it has 1623 classes with 20 examples each. Each image is of size 105x105. 
 
-
+##### Example
 ```python
 from metaX.datasets import OmniglotDatabase
 
@@ -37,9 +38,10 @@ database = OmniglotDatabase(
 </p>
 <p align="center"><strong>Example of MiniImageNet dataset</strong></p>
 
+##### Description
 MiniImageNet dataset is generally used for few-shot learning. This dataset contains 100 different classes in total that are divided into training, validation and test class splits. 
 
-
+##### Example
 ```python
 from metaX.datasets import MiniImagenetDatabase
 
@@ -57,8 +59,10 @@ database=MiniImagenetDatabase(
 </p>
 <p align="center"><strong>Example of CropDisease dataset</strong></p>
 
+##### Description
 CropDisease dataset is one of the CD-FSL(Cross-Dimain Few-Shot Learning). This dataset contains 38 different classes in total that have diseased and healthy palnt leaves.
 
+##### Example
 ```python
 from metaX.datasets import CropDiseaseDatabase
 
@@ -75,9 +79,10 @@ database=CropDiseaseDatabase(
 </p>
 <p align="center"><strong>Example of EuroSAT dataset</strong></p>
 
+##### Description
 EuroSAT dataset is based on Sentinel-2 satellite imagery covering 13 spectral bands and consists of 10 classes containing 27000 labeled and georeferenced samples.
 
-
+##### Example
 ```python
 from metaX.datasets import EuroSATDatabase
 
@@ -94,8 +99,10 @@ database=EuroSATDatabase(
 </p>
 <p align="center"><strong>Example of ISIC dataset</strong></p>
 
+##### Description
 ISIC dataset is from the ISIC Machine Learning Callenges. There are 8010 samples in the training dataset for seven disease categories which are Melanoma (M), Melanocytic nevus (N), Basal cell carcinoma (BCC), Actinic keratosis / Bowen's disease-intraepithelial carcinoma (AK), Benign keratosis- solar lentigo / seborrheic keratosis / lichen planus-like keratosis (PBK), Dermatofibroma (D) and Vascular lesion (VL).
 
+##### Example
 ```python
 from metaX.datasets import ISICDatabase
 
@@ -112,9 +119,10 @@ database=ISICDatabase(
 </p>
 <p align="center"><strong>Example of ChestX dataset</strong></p>
 
+##### Description
 Chest X dataset contains 108,948 frontalview X-ray images of 32,717 unique patients with the textmined eight disease image labels (where each image can have multi-labels), from the associated radiological reports.
 
-
+##### Example
 ```python
 from metaX.datasets import ChestXDatabase
 
@@ -133,8 +141,10 @@ database=ChestXDatabase(
 </p>
 <p align="center"><strong>Example of KTS dataset</strong></p>
 
+##### Description
 The KTS Dataset is consists of data on 10 labels related to tourist spots in Korea collected from the Instagram.
 
+##### Example
 ```python
 from metaX.datasets import KTSDatabase
 
@@ -146,8 +156,6 @@ database=KTSDatabase(
 
 
 #### Oxford Flowers 102
-Oxford Flowers 102 dataset is a consistent of 102 flower categories commonly occurring in the United Kingdom. Each class consists of between 40 and 258 images. The images have large scale, pose and light variations. In addition, there are categories that have large variations within the category and several very similar categories.
-
 
 <p align="center">
     <br>
@@ -156,6 +164,10 @@ Oxford Flowers 102 dataset is a consistent of 102 flower categories commonly occ
 </p>
 <p align="center"><strong>Example of Oxford Flowers 102 dataset</strong></p>
 
+##### Description
+Oxford Flowers 102 dataset is a consistent of 102 flower categories commonly occurring in the United Kingdom. Each class consists of between 40 and 258 images. The images have large scale, pose and light variations. In addition, there are categories that have large variations within the category and several very similar categories.
+
+##### Example
 ```python
 from metaX.datasets import FlowersDatabase
 
@@ -174,6 +186,8 @@ database=FlowersDatabase(
 ### Metric-based
 
 #### Siamese Network
+
+##### Example
 ```python
 from metaX.model.metric_based.Siamese_Network import Siamese_Network
 
@@ -185,6 +199,8 @@ if __ name__ == '__main__':
     print(siamese_network.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ```
 #### Prototypical Network
+
+##### Example
 ```python
 from metaX.model.metric_based.Prototypical_Network import Prototypical_Network
 
@@ -200,6 +216,7 @@ if __ name__ == '__main__':
 
 #### MANN
 
+##### Example
 ```python
 from metaX.model.model_based.MANN import MANN
 
@@ -215,6 +232,7 @@ if __ name__ == '__main__':
 
 #### MAML
 
+##### Example
 ```python
 from metaX.model.optimization_based.MANN import MAML
 
@@ -227,6 +245,7 @@ if __ name__ == '__main__':
 ```
 #### Reptile
 
+##### Example
 ```python
 from metaX.model.optimization_based.MANN import Reptile
 
@@ -240,6 +259,8 @@ if __ name__ == '__main__':
 ### Heterogeneous_data_analysis
 
 #### Heterogeneous Emedding
+
+##### Example
 ```python
 from metaX.model.heterogeneous.Heterogeneous_Emedding import Heterogeneous_Emedding
 
