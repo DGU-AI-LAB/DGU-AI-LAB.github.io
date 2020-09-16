@@ -174,19 +174,83 @@ database=FlowersDatabase(
 ### Metric-based
 
 #### Siamese Network
+```python
+from metaX.model.metric_based.Siamese_Network import Siamese_Network
+
+if __ name__ == '__main__':
+    siamese_network = Siamese_Network(args, database, network_cls)
+    siamese_network.meta_train(epochs = args.epochs)
+    siamese_network.meta_test(iterations = args.iterations)
+    siamese_network.load_model(epochs = args.epochs)
+    print(siamese_network.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
+```
 #### Prototypical Network
+```python
+from metaX.model.metric_based.Prototypical_Network import Prototypical_Network
+
+if __ name__ == '__main__':
+    prototypical_network = Prototypical_Network(args, database, network_cls)
+    prototypical_network.meta_train(epochs = args.epochs)
+    prototypical_network.meta_test(iterations = args.iterations)
+    prototypical_network.load_model(epochs = args.epochs)
+    print(prototypical_network.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
+```
 
 ### Model-based
 
 #### MANN
 
+```python
+from metaX.model.model_based.MANN import MANN
+
+if __ name__ == '__main__':
+    mann = MANN(args, database, network_cls)
+    mann.meta_train(epochs = args.epochs)
+    mann.meta_test(iterations = args.iterations)
+    mann.load_model(epochs = args.epochs)
+    print(mann.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
+```
+
 ### Optimization-based
 
 #### MAML
+
+```python
+from metaX.model.optimization_based.MANN import MAML
+
+if __ name__ == '__main__':
+    maml = MAML(args, database, network_cls)
+    maml.meta_train(epochs = args.epochs)
+    maml.meta_test(iterations = args.iterations)
+    maml.load_model(epochs = args.epochs)
+    print(maml.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
+```
 #### Reptile
 
+```python
+from metaX.model.optimization_based.MANN import Reptile
+
+if __ name__ == '__main__':
+    reptile = Reptile(args, database, network_cls)
+    reptile.meta_train(epochs = args.epochs)
+    reptile.meta_test(iterations = args.iterations)
+    reptile.load_model(epochs = args.epochs)
+    print(reptile.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
+```
 ### Heterogeneous_data_analysis
 
 #### Heterogeneous Emedding
+```python
+from metaX.model.heterogeneous.Heterogeneous_Emedding import Heterogeneous_Emedding
+
+if __ name__ == '__main__':
+    heterogeneous_emedding = Heterogeneous_Emedding(args, database, network_cls)
+    heterogeneous_emedding.train(epochs = args.epochs)
+    heterogeneous_emedding.test(iterations = args.iterations)
+    heterogeneous_emedding.load_model(epochs = args.epochs)
+    print(heterogeneous_emedding.predict(predict_path='/dataset/data/kts/test'))
+```
 #### Vis LSTM
+2세부 작성
 #### Modified mCNN
+2세부 작성
