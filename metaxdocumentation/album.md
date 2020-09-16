@@ -19,7 +19,7 @@ Omniglot dataset is generally used for one-shot learning. It contains 1623 diffe
 
 
 ```python
-from dataset.data_generator import OmniglotDatabase
+from metaX.datasets import OmniglotDatabase
 
 database = OmniglotDatabase(
     raw_data_address="dataset\raw_data\omniglot",
@@ -41,7 +41,7 @@ MiniImageNet dataset is generally used for few-shot learning. This dataset conta
 
 
 ```python
-from dataset.data_generator import MiniImagenetDatabase
+from metaX.datasets import MiniImagenetDatabase
 
 database=MiniImagenetDatabase(
 		    raw_data_address="\dataset\raw_data\mini_imagenet",
@@ -60,7 +60,7 @@ database=MiniImagenetDatabase(
 CropDisease dataset is one of the CD-FSL(Cross-Dimain Few-Shot Learning). This dataset contains 38 different classes in total that have diseased and healthy palnt leaves.
 
 ```python
-from dataset.data_generator import CropDiseaseDatabase
+from metaX.datasets import CropDiseaseDatabase
 
 database=CropDiseaseDatabase(
 		    raw_data_address="\dataset\raw_data\cropdisease",
@@ -79,7 +79,7 @@ EuroSAT dataset is based on Sentinel-2 satellite imagery covering 13 spectral ba
 
 
 ```python
-from dataset.data_generator import EuroSATDatabase
+from metaX.datasets import EuroSATDatabase
 
 database=EuroSATDatabase(
 		    raw_data_address="\dataset\raw_data\eurosat",
@@ -97,7 +97,7 @@ database=EuroSATDatabase(
 ISIC dataset is from the ISIC Machine Learning Callenges. There are 8010 samples in the training dataset for seven disease categories which are Melanoma (M), Melanocytic nevus (N), Basal cell carcinoma (BCC), Actinic keratosis / Bowen's disease-intraepithelial carcinoma (AK), Benign keratosis- solar lentigo / seborrheic keratosis / lichen planus-like keratosis (PBK), Dermatofibroma (D) and Vascular lesion (VL).
 
 ```python
-from dataset.data_generator import ISICDatabase
+from metaX.datasets import ISICDatabase
 
 database=ISICDatabase(
 		    raw_data_address="\dataset\raw_data\isic",
@@ -116,7 +116,7 @@ Chest X dataset contains 108,948 frontalview X-ray images of 32,717 unique patie
 
 
 ```python
-from dataset.data_generator import ChestXDatabase
+from metaX.datasets import ChestXDatabase
 
 database=ChestXDatabase(
 		    raw_data_address="\dataset\raw_data\chestx",
@@ -136,7 +136,7 @@ database=ChestXDatabase(
 The KTS Dataset is consists of data on 10 labels related to tourist spots in Korea collected from the Instagram.
 
 ```python
-from dataset.data_generator import KTSDatabase
+from metaX.datasets import KTSDatabase
 
 database=KTSDatabase(
 		    raw_data_address="\dataset\raw_data\kts",
@@ -157,7 +157,7 @@ Oxford Flowers 102 dataset is a consistent of 102 flower categories commonly occ
 <p align="center"><strong>Example of Oxford Flowers 102 dataset</strong></p>
 
 ```python
-from dataset.data_generator import FlowersDatabase
+from metaX.datasets import FlowersDatabase
 
 database=FlowersDatabase(
 		    raw_data_address="\dataset\raw_data\flowers",
