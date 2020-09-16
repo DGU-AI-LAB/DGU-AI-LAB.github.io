@@ -227,23 +227,62 @@ High-level implementation of Siamese Network.
 
 This class contains it with meta_train(), meta_train(), load_model() and predict_with_support() methods.
 
-##### Arguments
-
 ##### References
 1. Koch et al.2015. "Siamese neural networks for one-shot image recognition."
 
 
-##### Example
+Siamese_Network
 ```python
 from metaX.model.metric_based.Siamese_Network import Siamese_Network
+from metaX.model.metric_based.Siamese_Network import OmniglotModel
 
-if __ name__ == '__main__':
-    siamese_network = Siamese_Network(args, database, network_cls)
-    siamese_network.meta_train(epochs = args.epochs)
-    siamese_network.meta_test(iterations = args.iterations)
-    siamese_network.load_model(epochs = args.epochs)
-    print(siamese_network.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
+network_cls=OmniglotModel
+siamese_network = Siamese_Network(args, database, network_cls)
 ```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **args** (str) - 어쩌구저쩌구
+* **database** (int, default=-1) - 어쩌구저쩌구
+* **network_cls** (int, default=-1) - 어쩌구저쩌구
+
+```python
+siamese_network.meta_train(epochs = args.epochs)
+```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **epochs** (str) - 어쩌구저쩌구
+
+
+```python
+siamese_network.meta_test(iterations = args.iterations)
+```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **iterations** (str) - 어쩌구저쩌구
+
+
+
+```python
+siamese_network.load_model(epochs = args.epochs)
+```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **epochs** (str) - 어쩌구저쩌구
+
+
+
+```python
+print(siamese_network.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
+```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **meta_test_path** (str) - 어쩌구저쩌구
+
 #### Prototypical Network
 
 
@@ -252,22 +291,57 @@ High-level implementation of Prototypical Network.
 
 This class contains it with meta_train(), meta_train(), load_model() and predict_with_support() methods.
 
-##### Arguments
 
 ##### References
 1. Snell et al.2017. "Prototypical networks for few-shot learning."
 
-##### Example
+Prototypical_Network
 ```python
 from metaX.model.metric_based.Prototypical_Network import Prototypical_Network
+from metaX.model.metric_based.Prototypical_Network import OmniglotModel
 
-if __ name__ == '__main__':
-    prototypical_network = Prototypical_Network(args, database, network_cls)
-    prototypical_network.meta_train(epochs = args.epochs)
-    prototypical_network.meta_test(iterations = args.iterations)
-    prototypical_network.load_model(epochs = args.epochs)
-    print(prototypical_network.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
+network_cls=OmniglotModel
+prototypical_network = Prototypical_Network(args, database, network_cls)
 ```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **args** (str) - 어쩌구저쩌구
+* **database** (int, default=-1) - 어쩌구저쩌구
+* **network_cls** (int, default=-1) - 어쩌구저쩌구
+
+```python
+prototypical_network.meta_train(epochs = args.epochs)
+```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **epochs** (str) - 어쩌구저쩌구
+
+
+```python
+prototypical_network.meta_test(iterations = args.iterations)
+```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **iterations** (str) - 어쩌구저쩌구
+
+```python
+prototypical_network.load_model(epochs = args.epochs)
+```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **epochs** (str) - 어쩌구저쩌구
+
+```python
+print(prototypical_network.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
+```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **meta_test_path** (str) - 어쩌구저쩌구
 
 ### Model-based
 
@@ -284,17 +358,58 @@ This class contains it with meta_train(), meta_train(), load_model() and predict
 1. Santoro et al.2016. "Meta-learning with memory-augmented neural networks."
 
 
-##### Example
+MANN
 ```python
 from metaX.model.model_based.MANN import MANN
+from metaX.model.model_based.MANN import OmniglotModel
 
-if __ name__ == '__main__':
-    mann = MANN(args, database, network_cls)
-    mann.meta_train(epochs = args.epochs)
-    mann.meta_test(iterations = args.iterations)
-    mann.load_model(epochs = args.epochs)
-    print(mann.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
+network_cls=OmniglotModel
+mann = MANN(args, database, network_cls)
 ```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **args** (str) - 어쩌구저쩌구
+* **database** (int, default=-1) - 어쩌구저쩌구
+* **network_cls** (int, default=-1) - 어쩌구저쩌구
+
+
+```python
+mann.meta_train(epochs = args.epochs)
+```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **epochs** (str) - 어쩌구저쩌구
+
+
+```python
+mann.meta_test(iterations = args.iterations)
+```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **iterations** (str) - 어쩌구저쩌구
+
+
+```python
+mann.load_model(epochs = args.epochs)
+```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **epochs** (str) - 어쩌구저쩌구
+
+
+```python
+print(mann.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
+```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **meta_test_path** (str) - 어쩌구저쩌구
+
+
 
 ### Optimization-based
 
@@ -310,17 +425,58 @@ This class contains it with meta_train(), meta_train(), load_model() and predict
 ##### References
 1. Finn et al.2017. "Model-agnostic meta-learning for fast adaptation of deep networks."
 
-##### Example
+ModelAgnosticMetaLearning
 ```python
-from metaX.model.optimization_based.MANN import MAML
+from metaX.model.optimization_based.MAML import ModelAgnosticMetaLearning
+from metaX.model.optimization_based.MAML import OmniglotModel
 
-if __ name__ == '__main__':
-    maml = MAML(args, database, network_cls)
-    maml.meta_train(epochs = args.epochs)
-    maml.meta_test(iterations = args.iterations)
-    maml.load_model(epochs = args.epochs)
-    print(maml.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
+network_cls=OmniglotModel
+maml = ModelAgnosticMetaLearning(args, database, network_cls)
 ```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **args** (str) - 어쩌구저쩌구
+* **database** (int, default=-1) - 어쩌구저쩌구
+* **network_cls** (int, default=-1) - 어쩌구저쩌구
+
+
+```python
+maml.meta_train(epochs = args.epochs)
+```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **epochs** (str) - 어쩌구저쩌구
+
+
+```python
+maml.meta_test(iterations = args.iterations)
+```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **iterations** (str) - 어쩌구저쩌구
+
+
+```python
+maml.load_model(epochs = args.epochs)
+```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **epochs** (str) - 어쩌구저쩌구
+
+
+```python
+print(maml.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
+```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **meta_test_path** (str) - 어쩌구저쩌구
+
+
 #### Reptile
 
 ##### Description
@@ -333,17 +489,57 @@ This class contains it with meta_train(), meta_train(), load_model() and predict
 ##### References
 1. Nichol et al.2018. "On first-order meta-learning algorithms."
 
-##### Example
+Reptile
 ```python
-from metaX.model.optimization_based.MANN import Reptile
+from metaX.model.optimization_based.Reptile import Reptile
+from metaX.model.optimization_based.Reptile import OmniglotModel
 
-if __ name__ == '__main__':
-    reptile = Reptile(args, database, network_cls)
-    reptile.meta_train(epochs = args.epochs)
-    reptile.meta_test(iterations = args.iterations)
-    reptile.load_model(epochs = args.epochs)
-    print(reptile.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
+network_cls=OmniglotModel
+reptile = Reptile(args, database, network_cls)
 ```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **args** (str) - 어쩌구저쩌구
+* **database** (str) - 어쩌구저쩌구
+* **network_cls** (str) - 어쩌구저쩌구
+
+```python
+reptile.meta_train(epochs = args.epochs)
+```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **epochs** (str) - 어쩌구저쩌구
+
+
+```python
+reptile.meta_test(iterations = args.iterations)
+```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **iterations** (str) - 어쩌구저쩌구
+
+
+```python
+reptile.load_model(epochs = args.epochs)
+```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **epochs** (str) - 어쩌구저쩌구
+
+
+```python
+print(reptile.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
+```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **meta_test_path** (str) - 어쩌구저쩌구
+
+
 ### Heterogeneous_data_analysis
 
 #### Heterogeneous Emedding
@@ -352,22 +548,60 @@ if __ name__ == '__main__':
 ##### Description
 This class contains it with train(), train(), load_model() and predict() methods.
 
-##### Arguments
-
 ##### References
 
 
-##### Example
+Heterogeneous_Emedding
 ```python
 from metaX.model.heterogeneous.Heterogeneous_Emedding import Heterogeneous_Emedding
+from metaX.model.heterogeneous.Heterogeneous_Emedding import Heterogeneous_Emedding_Model
 
-if __ name__ == '__main__':
-    heterogeneous_emedding = Heterogeneous_Emedding(args, database, network_cls)
-    heterogeneous_emedding.train(epochs = args.epochs)
-    heterogeneous_emedding.test(iterations = args.iterations)
-    heterogeneous_emedding.load_model(epochs = args.epochs)
-    print(heterogeneous_emedding.predict(predict_path='/dataset/data/kts/test'))
+network_cls=Heterogeneous_Emedding_Model
+heterogeneous_emedding = Heterogeneous_Emedding(args, database, network_cls)
 ```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **args** (str) - 어쩌구저쩌구
+* **database** (str) - 어쩌구저쩌구
+* **network_cls** (str) - 어쩌구저쩌구
+
+
+```python
+heterogeneous_emedding.train(epochs = args.epochs)
+```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **epochs** (str) - 어쩌구저쩌구
+
+
+```python
+heterogeneous_emedding.test(iterations = args.iterations)
+```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **iterations** (str) - 어쩌구저쩌구
+
+
+```python
+heterogeneous_emedding.load_model(epochs = args.epochs)
+```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **epochs** (str) - 어쩌구저쩌구
+
+
+```python
+print(heterogeneous_emedding.predict(predict_path='/dataset/data/kts/test'))
+```
+##### Description
+어쩌구저쩌구
+##### Arguments
+* **predict_path** (str) - 어쩌구저쩌구
+
 #### Vis LSTM
 2세부 작성
 #### Modified mCNN
