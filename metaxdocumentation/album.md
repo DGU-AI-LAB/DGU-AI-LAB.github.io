@@ -5,9 +5,9 @@ sort: 2
 # Documentation
 ## metaX.dataset
 
-### Meta-Learning
+### 1. Meta-Learning
 
-#### Omniglot
+#### 1. Omniglot
 <p align="center">
     <br>
     <img src="https://raw.githubusercontent.com/DGU-AI-LAB/DGU-AI-LAB.github.io/master/images/omniglot.jpg" width="70%" height="70%">
@@ -36,7 +36,7 @@ database = OmniglotDatabase(
 
 ```
 
-#### MiniImageNet
+#### 2. MiniImageNet
 <p align="center">
     <br>
     <img src="https://raw.githubusercontent.com/DGU-AI-LAB/DGU-AI-LAB.github.io/master/images/miniImagenet.PNG" width="70%" height="70%">
@@ -62,7 +62,7 @@ database=MiniImagenetDatabase(
 
 ```
 
-#### CropDisease
+#### 3. CropDisease
 <p align="center">
     <br>
     <img src="https://raw.githubusercontent.com/DGU-AI-LAB/DGU-AI-LAB.github.io/master/images/CropDisease.jpg" width="70%" height="70%">
@@ -86,7 +86,7 @@ database=CropDiseaseDatabase(
 			random_seed=-1)
 
 ```
-#### EuroSAT
+#### 4. EuroSAT
 <p align="center">
     <br>
     <img src="https://raw.githubusercontent.com/DGU-AI-LAB/DGU-AI-LAB.github.io/master/images/EuroSAT.png" width="70%" height="70%">
@@ -110,7 +110,7 @@ database=EuroSATDatabase(
 			random_seed=-1)
 
 ```
-#### ISIC
+#### 5. ISIC
 <p align="center">
     <br>
     <img src="https://raw.githubusercontent.com/DGU-AI-LAB/DGU-AI-LAB.github.io/master/images/ISIC.png" width="70%" height="70%">
@@ -134,7 +134,7 @@ database=ISICDatabase(
 			random_seed=-1)
 
 ```
-#### ChestX
+#### 6. ChestX
 <p align="center">
     <br>
     <img src="https://raw.githubusercontent.com/DGU-AI-LAB/DGU-AI-LAB.github.io/master/images/ChestX.png" width="70%" height="70%">
@@ -158,9 +158,12 @@ database=ChestXDatabase(
 			random_seed=-1)
 
 ```
-### Multimodal Learning
 
-#### Korean Tourist Spot(KTS)
+---------
+
+### 2. Multimodal Learning
+
+#### 1. Korean Tourist Spot(KTS)
 <p align="center">
     <br>
     <img src="https://raw.githubusercontent.com/DGU-AI-LAB/DGU-AI-LAB.github.io/master/images/KTS.png" width="70%" height="70%">
@@ -186,7 +189,7 @@ database=KTSDatabase(
 ```
 
 
-#### Oxford Flowers 102
+#### 2. Oxford Flowers 102
 
 <p align="center">
     <br>
@@ -211,16 +214,21 @@ database=FlowersDatabase(
 			random_seed=-1)
 
 ```
-#### K-MSCOCO
+#### 3. K-MSCOCO
 2세부 작성
-#### K-VQA
+#### 4. K-VQA
 2세부 작성
+
+
+---
+---
+
 
 ## metaX.model
 
-### Metric-based
+### 1. Metric-based
 
-#### Siamese Network
+#### 1. Siamese Network
 
 ##### Description
 High-level implementation of Siamese Network.
@@ -283,7 +291,7 @@ print(siamese_network.predict_with_support(meta_test_path='/dataset/data/omniglo
 ##### Arguments
 * **meta_test_path** (str) - 어쩌구저쩌구
 
-#### Prototypical Network
+#### 2. Prototypical Network
 
 
 ##### Description
@@ -343,9 +351,9 @@ print(prototypical_network.predict_with_support(meta_test_path='/dataset/data/om
 ##### Arguments
 * **meta_test_path** (str) - 어쩌구저쩌구
 
-### Model-based
+### 2. Model-based
 
-#### MANN
+#### 1. MANN
 
 ##### Description
 High-level implementation of Memory-Augmented Neural Networks.
@@ -411,9 +419,9 @@ print(mann.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 
 
 
-### Optimization-based
+### 3. Optimization-based
 
-#### MAML
+#### 1. MAML
 
 ##### Description
 High-level implementation of Model-Agnostic Meta-Learning.
@@ -477,7 +485,7 @@ print(maml.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 * **meta_test_path** (str) - 어쩌구저쩌구
 
 
-#### Reptile
+#### 2. Reptile
 
 ##### Description
 High-level implementation of Reptile.
@@ -540,9 +548,9 @@ print(reptile.predict_with_support(meta_test_path='/dataset/data/omniglot/test')
 * **meta_test_path** (str) - 어쩌구저쩌구
 
 
-### Heterogeneous_data_analysis
+### 4. Heterogeneous_data_analysis
 
-#### Heterogeneous Emedding
+#### 1. Heterogeneous Emedding
 
 
 ##### Description
