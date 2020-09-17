@@ -160,9 +160,9 @@ database=ChestXDatabase(
 ```
 
 ---------
-
 ### 2. Multimodal Learning
 
+---------
 #### 1. Korean Tourist Spot(KTS)
 <p align="center">
     <br>
@@ -227,6 +227,7 @@ database=FlowersDatabase(
 
 ### 1. Metric-based
 
+---------
 #### 1. Siamese Network
 
 ##### References
@@ -297,6 +298,7 @@ print(siamese_network.predict_with_support(meta_test_path='/dataset/data/omniglo
 **Arguments**
 * **meta_test_path** (str) - prediction and support data path for result.
 
+---------
 #### 2. Prototypical Network
 
 ##### References
@@ -367,6 +369,7 @@ print(prototypical_network.predict_with_support(meta_test_path='/dataset/data/om
 
 ### 2. Model-based
 
+---------
 #### 1. MANN
 
 ##### References
@@ -439,6 +442,7 @@ print(mann.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 
 ### 3. Optimization-based
 
+---------
 #### 1. MAML
 
 ##### References
@@ -507,7 +511,7 @@ print(maml.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 **Arguments**
 * **meta_test_path** (str) - prediction and support data path for result.
 
-
+---------
 #### 2. Reptile
 
 ##### References
@@ -577,9 +581,11 @@ print(reptile.predict_with_support(meta_test_path='/dataset/data/omniglot/test')
 **Arguments**
 * **meta_test_path** (str) - prediction and support data path for result.
 
-
+---------
+---------
 ### 4. Heterogeneous_data_analysis
 
+---------
 #### 1. Heterogeneous Emedding
 
 ##### References
@@ -650,7 +656,10 @@ print(heterogeneous_emedding.predict(predict_path='/dataset/data/kts/test'))
 **Arguments**
 * **predict_path** (str) - prediction data path for result.
 
+---------
 #### Vis LSTM
 2세부 작성
+
+---------
 #### Modified mCNN
 2세부 작성
