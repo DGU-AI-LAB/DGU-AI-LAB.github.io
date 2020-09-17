@@ -233,7 +233,7 @@ database=FlowersDatabase(
 **Description**  
 High-level implementation of Siamese Network.
 
-This class contains it with meta_train(), meta_train(), load_model() and predict_with_support() methods.
+This class contains it with meta_train(), meta_test(), load_model() and predict_with_support() methods.
 
 ##### References
 1. Koch et al.2015. "Siamese neural networks for one-shot image recognition."
@@ -250,9 +250,9 @@ siamese_network = Siamese_Network(args, database, network_cls)
 **Description**  
 어쩌구저쩌구    
 **Arguments**
-* **args** (str) - 어쩌구저쩌구  
-* **database** (int, default=-1) - 어쩌구저쩌구  
-* **network_cls** (int, default=-1) - 어쩌구저쩌구  
+* **args** (parser.parse_args) - Arguments needed for meta-learning.
+* **database** (database) - one of metaX.dataset. ex) OmniglotDatabase, MiniImagenetDatabase, etc.
+* **network_cls** (MetaLearning) - one of metaX.model ex) OmniglotModel, MiniImagenetModel.
 
 ```python
 siamese_network.meta_train(epochs = args.epochs)
@@ -260,7 +260,7 @@ siamese_network.meta_train(epochs = args.epochs)
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **epochs** (str) - 어쩌구저쩌구  
+* **epochs** (int) - number of epochs for meta_train.
 
 
 ```python
@@ -269,7 +269,7 @@ siamese_network.meta_test(iterations = args.iterations)
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **iterations** (str) - 어쩌구저쩌구  
+* **iterations** (int) - number of iterations for fine turning at meta test.
 
 
 
@@ -279,7 +279,7 @@ siamese_network.load_model(epochs = args.epochs)
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **epochs** (str) - 어쩌구저쩌구  
+* **epochs** (int) - load for the saved model of epochs.
 
 
 
@@ -289,7 +289,7 @@ print(siamese_network.predict_with_support(meta_test_path='/dataset/data/omniglo
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **meta_test_path** (str) - 어쩌구저쩌구  
+* **meta_test_path** (str) - prediction and support data path for result.
 
 #### 2. Prototypical Network
 
@@ -297,7 +297,7 @@ print(siamese_network.predict_with_support(meta_test_path='/dataset/data/omniglo
 **Description**  
 High-level implementation of Prototypical Network.
 
-This class contains it with meta_train(), meta_train(), load_model() and predict_with_support() methods.
+This class contains it with meta_train(), meta_test(), load_model() and predict_with_support() methods.
 
 
 ##### References
@@ -314,9 +314,9 @@ prototypical_network = Prototypical_Network(args, database, network_cls)
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **args** (str) - 어쩌구저쩌구  
-* **database** (int, default=-1) - 어쩌구저쩌구  
-* **network_cls** (int, default=-1) - 어쩌구저쩌구  
+* **args** (parser.parse_args) - Arguments needed for meta-learning.
+* **database** (database) - one of metaX.dataset. ex) OmniglotDatabase, MiniImagenetDatabase, etc.
+* **network_cls** (MetaLearning) - one of metaX.model ex) OmniglotModel, MiniImagenetModel.
 
 ```python
 prototypical_network.meta_train(epochs = args.epochs)
@@ -324,7 +324,7 @@ prototypical_network.meta_train(epochs = args.epochs)
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **epochs** (str) - 어쩌구저쩌구  
+* **epochs** (int) - number of epochs for meta_train.
 
 
 ```python
@@ -333,7 +333,7 @@ prototypical_network.meta_test(iterations = args.iterations)
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **iterations** (str) - 어쩌구저쩌구  
+* **iterations** (int) - number of iterations for fine turning at meta test.
 
 ```python
 prototypical_network.load_model(epochs = args.epochs)
@@ -341,7 +341,7 @@ prototypical_network.load_model(epochs = args.epochs)
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **epochs** (str) - 어쩌구저쩌구  
+* **epochs** (int) - load for the saved model of epochs.
 
 ```python
 print(prototypical_network.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
@@ -349,7 +349,7 @@ print(prototypical_network.predict_with_support(meta_test_path='/dataset/data/om
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **meta_test_path** (str) - 어쩌구저쩌구  
+* **meta_test_path** (str) - prediction and support data path for result.
 
 ### 2. Model-based
 
@@ -358,7 +358,7 @@ print(prototypical_network.predict_with_support(meta_test_path='/dataset/data/om
 **Description**  
 High-level implementation of Memory-Augmented Neural Networks.
 
-This class contains it with meta_train(), meta_train(), load_model() and predict_with_support() methods.
+This class contains it with meta_train(), meta_test(), load_model() and predict_with_support() methods.
 
 **Arguments**
 
@@ -377,9 +377,9 @@ mann = MANN(args, database, network_cls)
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **args** (str) - 어쩌구저쩌구  
-* **database** (int, default=-1) - 어쩌구저쩌구  
-* **network_cls** (int, default=-1) - 어쩌구저쩌구  
+* **args** (parser.parse_args) - Arguments needed for meta-learning.
+* **database** (database) - one of metaX.dataset. ex) OmniglotDatabase, MiniImagenetDatabase, etc.
+* **network_cls** (MetaLearning) - one of metaX.model ex) OmniglotModel, MiniImagenetModel.
 
 
 ```python
@@ -388,7 +388,7 @@ mann.meta_train(epochs = args.epochs)
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **epochs** (str) - 어쩌구저쩌구  
+* **epochs** (int) - number of epochs for meta_train.
 
 
 ```python
@@ -397,7 +397,7 @@ mann.meta_test(iterations = args.iterations)
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **iterations** (str) - 어쩌구저쩌구  
+* **iterations** (int) - number of iterations for fine turning at meta test.
 
 
 ```python
@@ -406,7 +406,7 @@ mann.load_model(epochs = args.epochs)
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **epochs** (str) - 어쩌구저쩌구  
+* **epochs** (int) - load for the saved model of epochs.  
 
 
 ```python
@@ -415,7 +415,7 @@ print(mann.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **meta_test_path** (str) - 어쩌구저쩌구  
+* **meta_test_path** (str) - prediction and support data path for result.
 
 
 
@@ -426,7 +426,7 @@ print(mann.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 **Description**  
 High-level implementation of Model-Agnostic Meta-Learning.
 
-This class contains it with meta_train(), meta_train(), load_model() and predict_with_support() methods.
+This class contains it with meta_train(), meta_test(), load_model() and predict_with_support() methods.
 
 **Arguments**
 
@@ -444,9 +444,9 @@ maml = ModelAgnosticMetaLearning(args, database, network_cls)
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **args** (str) - 어쩌구저쩌구  
-* **database** (int, default=-1) - 어쩌구저쩌구  
-* **network_cls** (int, default=-1) - 어쩌구저쩌구  
+* **args** (parser.parse_args) - Arguments needed for meta-learning.
+* **database** (database) - one of metaX.dataset. ex) OmniglotDatabase, MiniImagenetDatabase, etc.
+* **network_cls** (MetaLearning) - one of metaX.model ex) OmniglotModel, MiniImagenetModel.
 
 
 ```python
@@ -455,7 +455,7 @@ maml.meta_train(epochs = args.epochs)
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **epochs** (str) - 어쩌구저쩌구  
+* **epochs** (int) - number of epochs for meta_train.
 
 
 ```python
@@ -464,7 +464,7 @@ maml.meta_test(iterations = args.iterations)
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **iterations** (str) - 어쩌구저쩌구  
+* **iterations** (int) - number of iterations for fine turning at meta test.
 
 
 ```python
@@ -473,7 +473,7 @@ maml.load_model(epochs = args.epochs)
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **epochs** (str) - 어쩌구저쩌구  
+* **epochs** (int) - load for the saved model of epochs.
 
 
 ```python
@@ -482,7 +482,7 @@ print(maml.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **meta_test_path** (str) - 어쩌구저쩌구  
+* **meta_test_path** (str) - prediction and support data path for result.
 
 
 #### 2. Reptile
@@ -490,7 +490,7 @@ print(maml.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 **Description**  
 High-level implementation of Reptile.
 
-This class contains it with meta_train(), meta_train(), load_model() and predict_with_support() methods.
+This class contains it with meta_train(), meta_test(), load_model() and predict_with_support() methods.
 
 **Arguments**
 
@@ -508,9 +508,9 @@ reptile = Reptile(args, database, network_cls)
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **args** (str) - 어쩌구저쩌구  
-* **database** (str) - 어쩌구저쩌구  
-* **network_cls** (str) - 어쩌구저쩌구  
+* **args** (parser.parse_args) - Arguments needed for meta-learning.
+* **database** (database) - one of metaX.dataset. ex) OmniglotDatabase, MiniImagenetDatabase, etc.
+* **network_cls** (MetaLearning) - one of metaX.model ex) OmniglotModel, MiniImagenetModel.
 
 ```python
 reptile.meta_train(epochs = args.epochs)
@@ -518,7 +518,7 @@ reptile.meta_train(epochs = args.epochs)
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **epochs** (str) - 어쩌구저쩌구  
+* **epochs** (int) - number of epochs for meta_train.
 
 
 ```python
@@ -527,7 +527,7 @@ reptile.meta_test(iterations = args.iterations)
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **iterations** (str) - 어쩌구저쩌구  
+* **iterations** (int) - number of iterations for fine turning at meta test.
 
 
 ```python
@@ -536,7 +536,7 @@ reptile.load_model(epochs = args.epochs)
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **epochs** (str) - 어쩌구저쩌구  
+* **epochs** (int) - load for the saved model of epochs. 
 
 
 ```python
@@ -545,7 +545,7 @@ print(reptile.predict_with_support(meta_test_path='/dataset/data/omniglot/test')
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **meta_test_path** (str) - 어쩌구저쩌구  
+* **meta_test_path** (str) - prediction and support data path for result.
 
 
 ### 4. Heterogeneous_data_analysis
@@ -554,7 +554,7 @@ print(reptile.predict_with_support(meta_test_path='/dataset/data/omniglot/test')
 
 
 **Description**  
-This class contains it with train(), train(), load_model() and predict() methods.
+This class contains it with train(), test(), load_model() and predict() methods.
 
 ##### References
 
@@ -570,9 +570,9 @@ heterogeneous_emedding = Heterogeneous_Emedding(args, database, network_cls)
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **args** (str) - 어쩌구저쩌구  
-* **database** (str) - 어쩌구저쩌구  
-* **network_cls** (str) - 어쩌구저쩌구  
+* **args** (parser.parse_args) - Arguments needed for heterogeneous data analysis.
+* **database** (database) - one of metaX.dataset. ex) OmniglotDatabase, MiniImagenetDatabase, etc.
+* **network_cls** (MetaLearning) - one of metaX.model ex) OmniglotModel, MiniImagenetModel.
 
 
 ```python
@@ -581,7 +581,7 @@ heterogeneous_emedding.train(epochs = args.epochs)
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **epochs** (str) - 어쩌구저쩌구  
+* **epochs** (int) - number of epochs for train.
 
 
 ```python
@@ -590,7 +590,7 @@ heterogeneous_emedding.test(iterations = args.iterations)
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **iterations** (str) - 어쩌구저쩌구  
+* **iterations** (int) - number of iterations for fine turning at test.
 
 
 ```python
@@ -599,7 +599,7 @@ heterogeneous_emedding.load_model(epochs = args.epochs)
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **epochs** (str) - 어쩌구저쩌구  
+* **epochs** (int) - load for the saved model of epochs.
 
 
 ```python
@@ -608,7 +608,7 @@ print(heterogeneous_emedding.predict(predict_path='/dataset/data/kts/test'))
 **Description**  
 어쩌구저쩌구  
 **Arguments**
-* **predict_path** (str) - 어쩌구저쩌구  
+* **predict_path** (str) - prediction data path for result.
 
 #### Vis LSTM
 2세부 작성
