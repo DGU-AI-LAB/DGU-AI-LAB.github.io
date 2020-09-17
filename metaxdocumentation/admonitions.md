@@ -10,7 +10,7 @@ sort: 3
 **Results**
 
 **Usage**
-```python
+```python class:"lineNo"
 from metaX.model.optimization_based.MAML import ModelAgnosticMetaLearning
 from metaX.model.optimization_based.MAML import OmniglotModel
 
@@ -26,7 +26,7 @@ print(maml.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 **Results**
 
 **Usage**
-```python
+```python class:"lineNo"
 from metaX.model.metric_based.Prototypical_Network import Prototypical_Network
 from metaX.model.metric_based.Prototypical_Network import OmniglotModel
 
