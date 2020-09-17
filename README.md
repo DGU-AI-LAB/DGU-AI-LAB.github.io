@@ -73,6 +73,15 @@ pip install metax
 ## Lisences
 
 ## Acknowledgements
-- Next Generation Computing...
+- This library was supported by Next-Generation Information Computing Development Program through the National Research Foundation of Korea (NRF)
+funded by the Ministry of Science, ICT (NRF-2017M3C4A7083279).
+
+- Department of Computer Engineering, Dongguk University.
+- Department of Computer Engineering, Duksung Women's University.
+- Department of Statistics, Chungang University.
+- Department of Statistics, Dongguk University.
+- BI MATRIX CO., LTD. 
+
+
 
 <p>
