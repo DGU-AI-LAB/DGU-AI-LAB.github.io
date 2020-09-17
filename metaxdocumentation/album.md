@@ -242,7 +242,7 @@ from metaX.model.metric_based.Siamese_Network import OmniglotModel
 network_cls=OmniglotModel
 siamese_network = Siamese_Network(args, database, network_cls)
 ```
-```note
+
 **Description**  
 High-level implementation of Siamese Network.
 
@@ -252,7 +252,7 @@ This class contains it with meta_train(), meta_test(), load_model() and predict_
 * **args** (parser.parse_args) - Arguments needed for meta-learning.
 * **database** (database) - one of metaX.dataset. ex) OmniglotDatabase, MiniImagenetDatabase, etc.
 * **network_cls** (MetaLearning) - one of metaX.model ex) OmniglotModel, MiniImagenetModel.
-```
+
 ---------
 meta_train
 ```python
@@ -270,7 +270,7 @@ meta_test
 siamese_network.meta_test(iterations = args.iterations)
 ```
 **Description**  
-어쩌구저쩌구  
+Do the meta-test with the siamese network method. It prints the model accuracy on the meta-test dataset(unseen at training phase).    
 
 **Arguments**
 * **iterations** (int) - number of iterations for fine turning at meta test.
@@ -282,7 +282,7 @@ load_model
 siamese_network.load_model(epochs = args.epochs)
 ```
 **Description**  
-어쩌구저쩌구  
+Load the parameters saved at the `args.epochs` epoch.
 
 **Arguments**
 * **epochs** (int) - load for the saved model of epochs.
@@ -294,7 +294,7 @@ predict_with_support
 print(siamese_network.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ```
 **Description**  
-어쩌구저쩌구  
+Return the predicted label of input query set. It takes the data path to be predicted. 
 
 **Arguments**
 * **meta_test_path** (str) - prediction and support data path for result.
@@ -330,7 +330,7 @@ meta_train
 prototypical_network.meta_train(epochs = args.epochs)
 ```
 **Description**  
-어쩌구저쩌구  
+Do the metirc-based meta-training on `network_cls` with the prototypical network method.
 
 **Arguments**
 * **epochs** (int) - number of epochs for meta_train.
@@ -341,7 +341,7 @@ meta_test
 prototypical_network.meta_test(iterations = args.iterations)
 ```
 **Description**  
-어쩌구저쩌구  
+Do the meta-test with the prototypical network method. It prints the model accuracy on the meta-test dataset(unseen at training phase).  
 
 **Arguments**
 * **iterations** (int) - number of iterations for fine turning at meta test.
@@ -352,7 +352,7 @@ load_model
 prototypical_network.load_model(epochs = args.epochs)
 ```
 **Description**  
-어쩌구저쩌구  
+Load the parameters saved at the `args.epochs` epoch.
 
 **Arguments**
 * **epochs** (int) - load for the saved model of epochs.
@@ -363,7 +363,7 @@ predict_with_support
 print(prototypical_network.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ```
 **Description**  
-어쩌구저쩌구  
+Return the predicted label of input query set. It takes the data path to be predicted. 
 
 **Arguments**
 * **meta_test_path** (str) - prediction and support data path for result.
@@ -401,7 +401,7 @@ meta_train
 mann.meta_train(epochs = args.epochs)
 ```
 **Description**  
-어쩌구저쩌구  
+Do the model-based meta-training on `network_cls` with the Memory Augmented Neural Network method.
 
 **Arguments**
 * **epochs** (int) - number of epochs for meta_train.
@@ -423,7 +423,7 @@ load_model
 mann.load_model(epochs = args.epochs)
 ```
 **Description**  
-어쩌구저쩌구  
+Load the parameters saved at the `args.epochs` epoch.
 
 **Arguments**
 * **epochs** (int) - load for the saved model of epochs.  
@@ -434,7 +434,7 @@ predict_with_support
 print(mann.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ```
 **Description**  
-어쩌구저쩌구  
+Return the predicted label of input query set. It takes the data path to be predicted. 
 
 **Arguments**
 * **meta_test_path** (str) - prediction and support data path for result.
@@ -496,7 +496,7 @@ load_model
 maml.load_model(epochs = args.epochs)
 ```
 **Description**  
-어쩌구저쩌구  
+Load the parameters saved at the `args.epochs` epoch.
 
 **Arguments**
 * **epochs** (int) - load for the saved model of epochs.
@@ -507,7 +507,7 @@ predict_with_support
 print(maml.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ```
 **Description**  
-어쩌구저쩌구  
+Return the predicted label of input query set. It takes the data path to be predicted. 
 
 **Arguments**
 * **meta_test_path** (str) - prediction and support data path for result.
@@ -566,7 +566,7 @@ load_model
 reptile.load_model(epochs = args.epochs)
 ```
 **Description**  
-어쩌구저쩌구  
+Load the parameters saved at the `args.epochs` epoch.
 
 **Arguments**
 * **epochs** (int) - load for the saved model of epochs. 
@@ -577,7 +577,7 @@ predict_with_support
 print(reptile.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ```
 **Description**  
-어쩌구저쩌구  
+Return the predicted label of input query set. It takes the data path to be predicted. 
 
 **Arguments**
 * **meta_test_path** (str) - prediction and support data path for result.
@@ -640,7 +640,7 @@ load_model
 heterogeneous_emedding.load_model(epochs = args.epochs)
 ```
 **Description**  
-어쩌구저쩌구  
+Load the parameters saved at the `args.epochs` epoch.
 
 **Arguments**
 * **epochs** (int) - load for the saved model of epochs.
