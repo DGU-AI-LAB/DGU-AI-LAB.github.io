@@ -14,12 +14,31 @@ Among various optimization based meta-learning algorithms for few-shot learning,
 ```python
 from metaX.model.optimization_based.MAML import ModelAgnosticMetaLearning
 from metaX.model.optimization_based.MAML import OmniglotModel
+from metaX.datasets import OmniglotDatabase
 
+# 1. Preprocess the Dataset
+database = OmniglotDatabase(
+    raw_data_address="dataset\raw_data\omniglot",
+    random_seed=47,
+    num_train_classes=1200,
+    num_val_classes=100)
+
+# 2. Create the learner model
 network_cls=OmniglotModel
+
+# 3. Wrap the meta-learning method(MAML) on the learner model and dataset
 maml = ModelAgnosticMetaLearning(args, database, network_cls)
+
+# 4. Meta-Train
 maml.meta_train(epochs = args.epochs)
+
+# 5. Meta-Test
 maml.meta_test(iterations = args.iterations)
+
+# 6. Load the trained model
 maml.load_model(epochs = args.epochs)
+
+# 7. Predict with support set
 print(maml.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ```
 ### Prototypical Networks
