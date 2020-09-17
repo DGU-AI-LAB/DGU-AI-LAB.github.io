@@ -76,6 +76,7 @@ pip install metax
 - This library was supported by Next-Generation Information Computing Development Program through the National Research Foundation of Korea (NRF)
 funded by the Ministry of Science, ICT (NRF-2017M3C4A7083279).
 
+## Contributor
 - Department of Computer Engineering, Dongguk University.
 - Department of Computer Engineering, Duksung Women's University.
 - Department of Statistics, Chungang University.
