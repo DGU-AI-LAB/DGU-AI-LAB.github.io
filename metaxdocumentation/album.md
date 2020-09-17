@@ -4,7 +4,6 @@ sort: 2
 
 # Documentation
 ---
-***
 ## metaX.dataset
 
 ### 1. Meta-Learning
@@ -216,7 +215,9 @@ database=FlowersDatabase(
 ---------
 #### 3. K-MSCOCO
 2세부 작성
+
 ---------
+
 #### 4. K-VQA
 2세부 작성
 
