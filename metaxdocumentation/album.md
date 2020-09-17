@@ -294,7 +294,7 @@ predict_with_support
 print(siamese_network.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ```
 **Description**  
-Return the predicted label of input query set. It takes the data path to be predicted. 
+Return the predicted label of input data. It takes the data path to be predicted. 
 
 **Arguments**
 * **meta_test_path** (str) - prediction and support data path for result.
@@ -363,7 +363,7 @@ predict_with_support
 print(prototypical_network.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ```
 **Description**  
-Return the predicted label of input query set. It takes the data path to be predicted. 
+Return the predicted label of input data. It takes the data path to be predicted. 
 
 **Arguments**
 * **meta_test_path** (str) - prediction and support data path for result.
@@ -412,7 +412,7 @@ meta_test
 mann.meta_test(iterations = args.iterations)
 ```
 **Description**  
-어쩌구저쩌구  
+Do the meta-test with the MANN method. It prints the model accuracy on the meta-test dataset(unseen at training phase).  
 
 **Arguments**
 * **iterations** (int) - number of iterations for fine turning at meta test.
@@ -434,7 +434,7 @@ predict_with_support
 print(mann.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ```
 **Description**  
-Return the predicted label of input query set. It takes the data path to be predicted. 
+Return the predicted label of input data. It takes the data path to be predicted. 
 
 **Arguments**
 * **meta_test_path** (str) - prediction and support data path for result.
@@ -474,7 +474,7 @@ meta_train
 maml.meta_train(epochs = args.epochs)
 ```
 **Description**  
-어쩌구저쩌구  
+Do the optimaztion-based meta-training on `network_cls` with the Model-Agnostic Meta-Learning method.
 
 **Arguments**
 * **epochs** (int) - number of epochs for meta_train.
@@ -485,7 +485,7 @@ meta_test
 maml.meta_test(iterations = args.iterations)
 ```
 **Description**  
-어쩌구저쩌구  
+Do the meta-test with the MAML method. It prints the model accuracy on the meta-test dataset(unseen at training phase).  
 
 **Arguments**
 * **iterations** (int) - number of iterations for fine turning at meta test.
@@ -507,7 +507,7 @@ predict_with_support
 print(maml.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ```
 **Description**  
-Return the predicted label of input query set. It takes the data path to be predicted. 
+Return the predicted label of input data. It takes the data path to be predicted. 
 
 **Arguments**
 * **meta_test_path** (str) - prediction and support data path for result.
@@ -544,7 +544,7 @@ meta_train
 reptile.meta_train(epochs = args.epochs)
 ```
 **Description**  
-어쩌구저쩌구  
+Do the optimaztion-based meta-training on `network_cls` with the Reptile method.
 
 **Arguments**
 * **epochs** (int) - number of epochs for meta_train.
@@ -555,7 +555,7 @@ meta_test
 reptile.meta_test(iterations = args.iterations)
 ```
 **Description**  
-어쩌구저쩌구  
+Do the meta-test with the Reptile method. It prints the model accuracy on the meta-test dataset(unseen at training phase).  
 
 **Arguments**
 * **iterations** (int) - number of iterations for fine turning at meta test.
@@ -577,7 +577,7 @@ predict_with_support
 print(reptile.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ```
 **Description**  
-Return the predicted label of input query set. It takes the data path to be predicted. 
+Return the predicted label of input data. It takes the data path to be predicted. 
 
 **Arguments**
 * **meta_test_path** (str) - prediction and support data path for result.
@@ -616,7 +616,7 @@ train
 heterogeneous_emedding.train(epochs = args.epochs)
 ```
 **Description**  
-어쩌구저쩌구  
+Train the heterogeneous embedding model which architecture is `network_cls`
 
 **Arguments**
 * **epochs** (int) - number of epochs for train.
@@ -628,7 +628,7 @@ test
 heterogeneous_emedding.test(iterations = args.iterations)
 ```
 **Description**  
-어쩌구저쩌구  
+Evaluate the heterogeneous embedding model which architecture is `network_cls`
 
 **Arguments**
 * **iterations** (int) - number of iterations for fine turning at test.
@@ -652,7 +652,7 @@ predict
 print(heterogeneous_emedding.predict(predict_path='/dataset/data/kts/test'))
 ```
 **Description**  
-어쩌구저쩌구  
+Return the predicted label of input data. It takes the data path to be predicted. 
 
 **Arguments**
 * **predict_path** (str) - prediction data path for result.
