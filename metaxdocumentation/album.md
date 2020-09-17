@@ -3,6 +3,7 @@ sort: 2
 ---
 
 # Documentation
+---
 ## metaX.dataset
 
 ### 1. Meta-Learning
@@ -35,7 +36,7 @@ database = OmniglotDatabase(
     num_val_classes=100)
 
 ```
-
+---------
 #### 2. MiniImageNet
 <p align="center">
     <br>
@@ -61,7 +62,7 @@ database=MiniImagenetDatabase(
 			random_seed=-1)
 
 ```
-
+---------
 #### 3. CropDisease
 <p align="center">
     <br>
@@ -84,8 +85,8 @@ from metaX.datasets import CropDiseaseDatabase
 database=CropDiseaseDatabase(
 			raw_data_address="\dataset\raw_data\cropdisease",
 			random_seed=-1)
-
 ```
+---------
 #### 4. EuroSAT
 <p align="center">
     <br>
@@ -108,8 +109,8 @@ from metaX.datasets import EuroSATDatabase
 database=EuroSATDatabase(
 			raw_data_address="\dataset\raw_data\eurosat",
 			random_seed=-1)
-
 ```
+---------
 #### 5. ISIC
 <p align="center">
     <br>
@@ -132,8 +133,8 @@ from metaX.datasets import ISICDatabase
 database=ISICDatabase(
 			raw_data_address="\dataset\raw_data\isic",
 			random_seed=-1)
-
 ```
+---------
 #### 6. ChestX
 <p align="center">
     <br>
@@ -156,7 +157,6 @@ from metaX.datasets import ChestXDatabase
 database=ChestXDatabase(
 			raw_data_address="\dataset\raw_data\chestx",
 			random_seed=-1)
-
 ```
 
 ---------
@@ -185,10 +185,8 @@ from metaX.datasets import KTSDatabase
 database=KTSDatabase(
 			raw_data_address="\dataset\raw_data\kts",
 			random_seed=-1)
-
 ```
-
-
+---------
 #### 2. Oxford Flowers 102
 
 <p align="center">
@@ -214,16 +212,15 @@ database=FlowersDatabase(
 			random_seed=-1)
 
 ```
+---------
 #### 3. K-MSCOCO
 2세부 작성
+---------
 #### 4. K-VQA
 2세부 작성
 
 
 ---
----
-
-
 ## metaX.model
 
 ### 1. Metric-based
@@ -233,7 +230,7 @@ database=FlowersDatabase(
 ##### References
 1. Koch et al.2015. "Siamese neural networks for one-shot image recognition."
 
-
+---------
 Siamese_Network
 ```python
 from metaX.model.metric_based.Siamese_Network import Siamese_Network
@@ -252,6 +249,8 @@ This class contains it with meta_train(), meta_test(), load_model() and predict_
 * **database** (database) - one of metaX.dataset. ex) OmniglotDatabase, MiniImagenetDatabase, etc.
 * **network_cls** (MetaLearning) - one of metaX.model ex) OmniglotModel, MiniImagenetModel.
 
+---------
+meta_train
 ```python
 siamese_network.meta_train(epochs = args.epochs)
 ```
@@ -261,7 +260,8 @@ siamese_network.meta_train(epochs = args.epochs)
 **Arguments**
 * **epochs** (int) - number of epochs for meta_train.
 
-
+---------
+meta_test
 ```python
 siamese_network.meta_test(iterations = args.iterations)
 ```
@@ -272,7 +272,8 @@ siamese_network.meta_test(iterations = args.iterations)
 * **iterations** (int) - number of iterations for fine turning at meta test.
 
 
-
+---------
+load_model
 ```python
 siamese_network.load_model(epochs = args.epochs)
 ```
@@ -283,7 +284,8 @@ siamese_network.load_model(epochs = args.epochs)
 * **epochs** (int) - load for the saved model of epochs.
 
 
-
+---------
+predict_with_support
 ```python
 print(siamese_network.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ```
@@ -298,6 +300,7 @@ print(siamese_network.predict_with_support(meta_test_path='/dataset/data/omniglo
 ##### References
 1. Snell et al.2017. "Prototypical networks for few-shot learning."
 
+---------
 Prototypical_Network
 ```python
 from metaX.model.metric_based.Prototypical_Network import Prototypical_Network
@@ -316,6 +319,8 @@ This class contains it with meta_train(), meta_test(), load_model() and predict_
 * **database** (database) - one of metaX.dataset. ex) OmniglotDatabase, MiniImagenetDatabase, etc.
 * **network_cls** (MetaLearning) - one of metaX.model ex) OmniglotModel, MiniImagenetModel.
 
+---------
+meta_train
 ```python
 prototypical_network.meta_train(epochs = args.epochs)
 ```
@@ -325,7 +330,8 @@ prototypical_network.meta_train(epochs = args.epochs)
 **Arguments**
 * **epochs** (int) - number of epochs for meta_train.
 
-
+---------
+meta_test
 ```python
 prototypical_network.meta_test(iterations = args.iterations)
 ```
@@ -335,6 +341,8 @@ prototypical_network.meta_test(iterations = args.iterations)
 **Arguments**
 * **iterations** (int) - number of iterations for fine turning at meta test.
 
+---------
+load_model
 ```python
 prototypical_network.load_model(epochs = args.epochs)
 ```
@@ -344,6 +352,8 @@ prototypical_network.load_model(epochs = args.epochs)
 **Arguments**
 * **epochs** (int) - load for the saved model of epochs.
 
+---------
+predict_with_support
 ```python
 print(prototypical_network.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ```
@@ -360,7 +370,7 @@ print(prototypical_network.predict_with_support(meta_test_path='/dataset/data/om
 ##### References
 1. Santoro et al.2016. "Meta-learning with memory-augmented neural networks."
 
-
+---------
 MANN
 ```python
 from metaX.model.model_based.MANN import MANN
@@ -379,7 +389,8 @@ This class contains it with meta_train(), meta_test(), load_model() and predict_
 * **database** (database) - one of metaX.dataset. ex) OmniglotDatabase, MiniImagenetDatabase, etc.
 * **network_cls** (MetaLearning) - one of metaX.model ex) OmniglotModel, MiniImagenetModel.
 
-
+---------
+meta_train
 ```python
 mann.meta_train(epochs = args.epochs)
 ```
@@ -389,7 +400,8 @@ mann.meta_train(epochs = args.epochs)
 **Arguments**
 * **epochs** (int) - number of epochs for meta_train.
 
-
+---------
+meta_test
 ```python
 mann.meta_test(iterations = args.iterations)
 ```
@@ -399,7 +411,8 @@ mann.meta_test(iterations = args.iterations)
 **Arguments**
 * **iterations** (int) - number of iterations for fine turning at meta test.
 
-
+---------
+load_model
 ```python
 mann.load_model(epochs = args.epochs)
 ```
@@ -409,7 +422,8 @@ mann.load_model(epochs = args.epochs)
 **Arguments**
 * **epochs** (int) - load for the saved model of epochs.  
 
-
+---------
+predict_with_support
 ```python
 print(mann.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ```
@@ -428,6 +442,7 @@ print(mann.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ##### References
 1. Finn et al.2017. "Model-agnostic meta-learning for fast adaptation of deep networks."
 
+---------
 ModelAgnosticMetaLearning
 ```python
 from metaX.model.optimization_based.MAML import ModelAgnosticMetaLearning
@@ -446,7 +461,8 @@ This class contains it with meta_train(), meta_test(), load_model() and predict_
 * **database** (database) - one of metaX.dataset. ex) OmniglotDatabase, MiniImagenetDatabase, etc.
 * **network_cls** (MetaLearning) - one of metaX.model ex) OmniglotModel, MiniImagenetModel.
 
-
+---------
+meta_train
 ```python
 maml.meta_train(epochs = args.epochs)
 ```
@@ -456,7 +472,8 @@ maml.meta_train(epochs = args.epochs)
 **Arguments**
 * **epochs** (int) - number of epochs for meta_train.
 
-
+---------
+meta_test
 ```python
 maml.meta_test(iterations = args.iterations)
 ```
@@ -466,7 +483,8 @@ maml.meta_test(iterations = args.iterations)
 **Arguments**
 * **iterations** (int) - number of iterations for fine turning at meta test.
 
-
+---------
+load_model
 ```python
 maml.load_model(epochs = args.epochs)
 ```
@@ -476,7 +494,8 @@ maml.load_model(epochs = args.epochs)
 **Arguments**
 * **epochs** (int) - load for the saved model of epochs.
 
-
+---------
+predict_with_support
 ```python
 print(maml.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ```
@@ -492,6 +511,7 @@ print(maml.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ##### References
 1. Nichol et al.2018. "On first-order meta-learning algorithms."
 
+---------
 Reptile
 ```python
 from metaX.model.optimization_based.Reptile import Reptile
@@ -511,6 +531,8 @@ This class contains it with meta_train(), meta_test(), load_model() and predict_
 * **database** (database) - one of metaX.dataset. ex) OmniglotDatabase, MiniImagenetDatabase, etc.
 * **network_cls** (MetaLearning) - one of metaX.model ex) OmniglotModel, MiniImagenetModel.
 
+---------
+meta_train
 ```python
 reptile.meta_train(epochs = args.epochs)
 ```
@@ -520,7 +542,8 @@ reptile.meta_train(epochs = args.epochs)
 **Arguments**
 * **epochs** (int) - number of epochs for meta_train.
 
-
+---------
+meta_test
 ```python
 reptile.meta_test(iterations = args.iterations)
 ```
@@ -530,7 +553,8 @@ reptile.meta_test(iterations = args.iterations)
 **Arguments**
 * **iterations** (int) - number of iterations for fine turning at meta test.
 
-
+---------
+load_model
 ```python
 reptile.load_model(epochs = args.epochs)
 ```
@@ -540,7 +564,8 @@ reptile.load_model(epochs = args.epochs)
 **Arguments**
 * **epochs** (int) - load for the saved model of epochs. 
 
-
+---------
+predict_with_support
 ```python
 print(reptile.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ```
@@ -557,7 +582,7 @@ print(reptile.predict_with_support(meta_test_path='/dataset/data/omniglot/test')
 
 ##### References
 
-
+---------
 Heterogeneous_Emedding
 ```python
 from metaX.model.heterogeneous.Heterogeneous_Emedding import Heterogeneous_Emedding
@@ -575,6 +600,8 @@ This class contains it with train(), test(), load_model() and predict() methods.
 * **database** (database) - one of metaX.dataset. ex) KTSDatabase, FlowersDatabase, etc.
 * **network_cls** (MetaLearning) - one of metaX.model ex) OmniglotModel, MiniImagenetModel.
 
+---------
+train
 
 ```python
 heterogeneous_emedding.train(epochs = args.epochs)
@@ -585,6 +612,8 @@ heterogeneous_emedding.train(epochs = args.epochs)
 **Arguments**
 * **epochs** (int) - number of epochs for train.
 
+---------
+test
 
 ```python
 heterogeneous_emedding.test(iterations = args.iterations)
@@ -595,6 +624,8 @@ heterogeneous_emedding.test(iterations = args.iterations)
 **Arguments**
 * **iterations** (int) - number of iterations for fine turning at test.
 
+---------
+load_model
 
 ```python
 heterogeneous_emedding.load_model(epochs = args.epochs)
@@ -605,6 +636,8 @@ heterogeneous_emedding.load_model(epochs = args.epochs)
 **Arguments**
 * **epochs** (int) - load for the saved model of epochs.
 
+---------
+predict
 
 ```python
 print(heterogeneous_emedding.predict(predict_path='/dataset/data/kts/test'))
