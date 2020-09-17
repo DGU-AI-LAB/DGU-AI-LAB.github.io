@@ -242,6 +242,7 @@ from metaX.model.metric_based.Siamese_Network import OmniglotModel
 network_cls=OmniglotModel
 siamese_network = Siamese_Network(args, database, network_cls)
 ```
+```note
 **Description**  
 High-level implementation of Siamese Network.
 
@@ -251,14 +252,14 @@ This class contains it with meta_train(), meta_test(), load_model() and predict_
 * **args** (parser.parse_args) - Arguments needed for meta-learning.
 * **database** (database) - one of metaX.dataset. ex) OmniglotDatabase, MiniImagenetDatabase, etc.
 * **network_cls** (MetaLearning) - one of metaX.model ex) OmniglotModel, MiniImagenetModel.
-
+```
 ---------
 meta_train
 ```python
 siamese_network.meta_train(epochs = args.epochs)
 ```
 **Description**  
-어쩌구저쩌구  
+Do the metirc-based meta-training on `network_cls` with the siamese network method.
 
 **Arguments**
 * **epochs** (int) - number of epochs for meta_train.
