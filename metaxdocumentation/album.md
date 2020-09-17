@@ -16,14 +16,14 @@ sort: 2
 </p>
 <p align="center"><strong>Example of omniglot dataset</strong></p>
 
-> **Description**  
-> Omniglot dataset is generally used for one-shot learning. It contains 1623 different handwritten characters from 50 different alphabets written by 20 different people. That > means, it has 1623 classes with 20 examples each. Each image is of size 105x105. 
+**Description**  
+Omniglot dataset is generally used for one-shot learning. It contains 1623 different handwritten characters from 50 different alphabets written by 20 different people. That > means, it has 1623 classes with 20 examples each. Each image is of size 105x105. 
 
-> **Arguments**
-> * **raw_data_address** (str) - Omniglot raw data path.
-> * **random_seed** (int, default=-1) - Random seed value.
-> * **num_train_classes** (int) - Number of train classes.
-> * **num_val_classes** (int) - Number of validation classes.
+**Arguments**
+* **raw_data_address** (str) - Omniglot raw data path.
+* **random_seed** (int, default=-1) - Random seed value.
+* **num_train_classes** (int) - Number of train classes.
+* **num_val_classes** (int) - Number of validation classes.
 
 **Example**
 ```python
