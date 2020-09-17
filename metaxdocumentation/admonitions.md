@@ -8,6 +8,7 @@ sort: 3
 ### MAML
 
 **Results**
+Among various optimization based meta-learning algorithms for few-shot learning, MAML(model-agnostic meta-learning) has been highly popular due to its great performance on several benchmaks. This idea is to establish a meta-learner that seeks an initialization useful for fast learning of different tasks, then adapt to specific tasks quickly and efficiently.
 
 **Usage**
 ```python
@@ -24,6 +25,8 @@ print(maml.predict_with_support(meta_test_path='/dataset/data/omniglot/test'))
 ### Prototypical Networks
 
 **Results**
+Among various metric based meta-learning algorithms for few-shot learning, prototypical networks has been highly popular due to its great performance on several benchmaks. 
+This idea is to learn a metric space in which classification can be performed by computing distances to prototype representations of each class.
 
 **Usage**
 ```python
