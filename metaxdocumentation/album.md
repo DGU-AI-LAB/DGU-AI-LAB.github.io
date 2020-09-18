@@ -252,7 +252,7 @@ siamese_network = Siamese_Network(args, database, network_cls)
 * **network_cls** (MetaLearning) - one of metaX.model ex) OmniglotModel, MiniImagenetModel.
 
 ---------
-**Methods**
+#### **Methods**
 
 ---------
 meta_train
@@ -334,7 +334,7 @@ prototypical_network = Prototypical_Network(args, database, network_cls)
 * **network_cls** (MetaLearning) - one of metaX.model ex) OmniglotModel, MiniImagenetModel.
 
 ---------
-**Methods**
+#### **Methods**
 
 ---------
 meta_train
@@ -419,7 +419,7 @@ mann = MANN(args, database, network_cls)
 * **network_cls** (MetaLearning) - one of metaX.model ex) OmniglotModel, MiniImagenetModel.
 
 ---------
-**Methods**
+#### **Methods**
 
 ---------
 meta_train
@@ -503,7 +503,7 @@ maml = ModelAgnosticMetaLearning(args, database, network_cls)
 * **network_cls** (MetaLearning) - one of metaX.model ex) OmniglotModel, MiniImagenetModel.
 
 ---------
-**Methods**
+#### **Methods**
 
 ---------
 meta_train
@@ -584,7 +584,7 @@ reptile = Reptile(args, database, network_cls)
 * **network_cls** (MetaLearning) - one of metaX.model ex) OmniglotModel, MiniImagenetModel.
 
 ---------
-**Methods**
+#### **Methods**
 
 ---------
 meta_train
@@ -667,7 +667,7 @@ heterogeneous_emedding = Heterogeneous_Emedding(args, database, network_cls)
 * **network_cls** (MetaLearning) - one of metaX.model ex) OmniglotModel, MiniImagenetModel.
 
 ---------
-**Methods**
+#### **Methods**
 
 ---------
 train
