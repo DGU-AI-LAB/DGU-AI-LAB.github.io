@@ -58,7 +58,7 @@ utils.py (accuracy, mse)
 
 ## Resources
 - [Website](https://dgu-ai-lab.github.io/)
-- [Documentation](https://dgu-ai-lab.github.io/)
+- [Documentation](./metaxdocumentation/documentation)
 - [Tutorials](https://dgu-ai-lab.github.io/)
 - [Examples](https://dgu-ai-lab.github.io/)
 - [GitHub](https://github.com/DGU-AI-LAB/metaX_dev)
